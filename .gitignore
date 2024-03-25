@@ -1,0 +1,5 @@
+/data/*
+!/data/dtd/
+!/data/RSSCN7-master/
+/data/dtd/*
+/data/RSSCN7-master/*
