@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 PATCH_SIZE = 16
 IMAGE_WIDTH = 224
 IMAGE_HEIGHT = IMAGE_WIDTH
