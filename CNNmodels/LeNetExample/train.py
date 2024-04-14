@@ -156,8 +156,6 @@ for e in range(0, EPOCHS):
 		avgValLoss, valCorrect))
 	
 
-
-
 # finish measuring how long training took
 endTime = time.time()
 print("[INFO] total time taken to train the model: {:.2f}s".format(
