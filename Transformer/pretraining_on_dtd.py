@@ -55,7 +55,6 @@ def load_images(directory):
                 filepath = os.path.join(root, file)
                 with Image.open(filepath) as img:
                     tensor_img = transform(img.copy())
-                    # tensor_img = tensor_img.float()
                     images.append(tensor_img)
     return images
 
@@ -217,6 +216,31 @@ for e in range(0, EPOCHS):
    	# 	avgTrainLoss, trainCorrect))
     # print("Val loss: {:.6f}, Val accuracy: {:.4f}\n".format(
    	# 	avgValLoss, valCorrect))
+
+# finish measuring how long training took
+endTime = time.time()
+print("[INFO] total time taken to train the model: {:.2f}s".format(
+	endTime - startTime))
+
+#%%
+
+print("[INFO] evaluating network...")
+
+test_loss = 0
+test_steps = len(test_dataloader.dataset) // BATCH_SIZE
+
+with torch.no_grad():
+    model.eval()
+    preds = []
+    for (x, y) in test_dataloader:
+        x = x.to(device)
+        pred = model(x)
+        y = torch.tensor(y, dtype=pred.dtype)
+        test_loss += lossFn(pred, y)
+        
+avg_test_loss = test_loss / test_steps
+        
+print("[INFO] Average test loss: ", avg_test_loss)
     
 #%% example prediction
 
