@@ -54,7 +54,9 @@ def load_images(directory):
             if file.endswith('.jpg'):
                 filepath = os.path.join(root, file)
                 with Image.open(filepath) as img:
-                    images.append(transform(img.copy())) # maybe it will work without copy
+                    tensor_img = transform(img.copy())
+                    # tensor_img = tensor_img.float()
+                    images.append(tensor_img)
     return images
 
 images = load_images(DTD_PATH)
@@ -95,7 +97,7 @@ def transform_encoded_labels(encoded_labels, n_classes):
     for sublist in encoded_labels:
         row = np.zeros(n_classes)
         row[sublist] = 1
-        y.append(np.array([row]))
+        y.append(np.array(row))
     return y
 
 y = transform_encoded_labels(encoded_labels, n_classes)
@@ -137,7 +139,21 @@ model = ViT('B_16_imagenet1k', pretrained=False)
 in_features = model.fc.in_features
 
 # Define a new fully connected layer with 47 output features
-new_fc_layer = nn.Linear(in_features, n_classes)
+# new_fc_layer = nn.Linear(in_features, n_classes)
+
+class FullyConnectedLayer(nn.Module):
+    def __init__(self, input_size, output_size):
+        super(FullyConnectedLayer, self).__init__()
+        self.fc = nn.Linear(input_size, output_size)
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+        x = self.fc(x)
+        x = self.sigmoid(x)
+        return x
+
+# Create the fully connected layer
+new_fc_layer = FullyConnectedLayer(in_features, n_classes)
 
 # Replace the last fully connected layer in the model with the new one
 model.fc = new_fc_layer
@@ -147,7 +163,7 @@ model = model.to(device)
 #%% training
 
 opt = Adam(model.parameters(), lr=INIT_LR)
-lossFn = nn.NLLLoss()
+lossFn = nn.BCELoss()
 
 H = {
 	"train_loss": [],
@@ -165,39 +181,42 @@ for e in range(0, EPOCHS):
     model.train()
     totalTrainLoss = 0
     totalValLoss = 0
-    trainCorrect = 0
-    valCorrect = 0
+    # trainCorrect = 0
+    # valCorrect = 0
     for (x, y) in train_dataloader:
         (x, y) = (x.to(device), y.to(device))
         pred = model(x)
+        y = torch.tensor(y, dtype=pred.dtype)
+        # here sth wrong (maybe it needs encoding)
         loss = lossFn(pred, y)
         opt.zero_grad()
         loss.backward()
         opt.step()
         totalTrainLoss += loss
-        trainCorrect += (pred.argmax(1) == y).type(
-   			torch.float).sum().item()
+      #   trainCorrect += (pred.argmax(1) == y).type(
+   			# torch.float).sum().item()
     with torch.no_grad():
-   		model.eval()
-   		for (x, y) in val_dataloader:
-   			(x, y) = (x.to(device), y.to(device))
-   			pred = model(x)
-   			totalValLoss += lossFn(pred, y)
-   			valCorrect += (pred.argmax(1) == y).type(
-   				torch.float).sum().item()
+        model.eval()
+        for (x, y) in val_dataloader:
+            (x, y) = (x.to(device), y.to(device))
+            pred = model(x)
+            y = torch.tensor(y, dtype=pred.dtype)
+            totalValLoss += lossFn(pred, y)
+       #      valCorrect += (pred.argmax(1) == y).type(
+   				# torch.float).sum().item()
     avgTrainLoss = totalTrainLoss / train_steps
     avgValLoss = totalValLoss / val_steps
-    trainCorrect = trainCorrect / len(train_dataloader.dataset)
-    valCorrect = valCorrect / len(val_dataloader.dataset)
+    # trainCorrect = trainCorrect / len(train_dataloader.dataset)
+    # valCorrect = valCorrect / len(val_dataloader.dataset)
     H["train_loss"].append(avgTrainLoss.cpu().detach().numpy())
-    H["train_acc"].append(trainCorrect)
+    # H["train_acc"].append(trainCorrect)
     H["val_loss"].append(avgValLoss.cpu().detach().numpy())
-    H["val_acc"].append(valCorrect)
+    # H["val_acc"].append(valCorrect)
     print("[INFO] EPOCH: {}/{}".format(e + 1, EPOCHS))
-    print("Train loss: {:.6f}, Train accuracy: {:.4f}".format(
-   		avgTrainLoss, trainCorrect))
-    print("Val loss: {:.6f}, Val accuracy: {:.4f}\n".format(
-   		avgValLoss, valCorrect))
+    # print("Train loss: {:.6f}, Train accuracy: {:.4f}".format(
+   	# 	avgTrainLoss, trainCorrect))
+    # print("Val loss: {:.6f}, Val accuracy: {:.4f}\n".format(
+   	# 	avgValLoss, valCorrect))
     
 #%% example prediction
 
@@ -207,5 +226,5 @@ print(outputs.shape)
 
 #%%
 
-torch.save(model, 'output/vit_model.pth')
+torch.save(model, 'output/vit_pretrained_on_dtd.pth')
 
