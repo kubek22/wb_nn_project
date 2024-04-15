@@ -1,0 +1,25 @@
+Training - Epoch 1/12, Loss: 1.9241, Accuracy: 14.7321%
+Testing - Epoch 1/12, Loss: 1.8304, Accuracy: 17.1429%
+Training - Epoch 2/12, Loss: 1.7455, Accuracy: 26.1161%
+Testing - Epoch 2/12, Loss: 1.6271, Accuracy: 34.1071%
+Training - Epoch 3/12, Loss: 1.5014, Accuracy: 32.6786%
+Testing - Epoch 3/12, Loss: 1.4198, Accuracy: 30.7143%
+Training - Epoch 4/12, Loss: 1.3886, Accuracy: 38.2589%
+Testing - Epoch 4/12, Loss: 1.2367, Accuracy: 40.8929%
+Training - Epoch 5/12, Loss: 1.2434, Accuracy: 44.3304%
+Testing - Epoch 5/12, Loss: 1.2896, Accuracy: 41.2500%
+Training - Epoch 6/12, Loss: 1.1430, Accuracy: 50.8929%
+Testing - Epoch 6/12, Loss: 1.0815, Accuracy: 55.3571%
+Training - Epoch 7/12, Loss: 1.0481, Accuracy: 55.1786%
+Testing - Epoch 7/12, Loss: 1.1277, Accuracy: 50.8929%
+Training - Epoch 8/12, Loss: 0.9823, Accuracy: 57.5000%
+Testing - Epoch 8/12, Loss: 1.0494, Accuracy: 54.8214%
+Training - Epoch 9/12, Loss: 0.9642, Accuracy: 58.2143%
+Testing - Epoch 9/12, Loss: 0.8970, Accuracy: 62.3214%
+Training - Epoch 10/12, Loss: 0.9295, Accuracy: 59.4196%
+Testing - Epoch 10/12, Loss: 0.8792, Accuracy: 61.7857%
+Training - Epoch 11/12, Loss: 0.8967, Accuracy: 62.6339%
+Testing - Epoch 11/12, Loss: 0.8382, Accuracy: 61.6071%
+Training - Epoch 12/12, Loss: 0.8530, Accuracy: 65.0893%
+Testing - Epoch 12/12, Loss: 0.8675, Accuracy: 63.2143%
+Training complete.
