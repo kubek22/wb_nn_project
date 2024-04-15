@@ -26,16 +26,15 @@ from torch.utils.data import Dataset
 #%% setting parameters
 
 INIT_LR = 1e-3
-BATCH_SIZE = 4
-IMG_DIM = 384
+BATCH_SIZE = 16
+IMG_DIM = 224
 IMG_HEIGHT, IMG_WIDTH = IMG_DIM, IMG_DIM
 IMAGE_SIZE=(IMG_HEIGHT, IMG_WIDTH)
 EPOCHS = 10
 TEST_SPLIT = 0.20
 VAL_SPLIT = 0.25
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 #%% loading data
 
@@ -133,7 +132,8 @@ test_dataloader = DataLoader(test_set, batch_size=BATCH_SIZE, shuffle=False)
 
 # https://github.com/lukemelas/PyTorch-Pretrained-ViT
 # model = ViT('B_16_imagenet1k', pretrained=True)
-model = ViT('B_16_imagenet1k', pretrained=False)
+
+model = ViT('B_16', pretrained=False)
 
 in_features = model.fc.in_features
 
@@ -183,6 +183,7 @@ for e in range(0, EPOCHS):
     # trainCorrect = 0
     # valCorrect = 0
     for (x, y) in train_dataloader:
+        startTime = time.time()
         (x, y) = (x.to(device), y.to(device))
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
@@ -192,6 +193,9 @@ for e in range(0, EPOCHS):
         loss.backward()
         opt.step()
         totalTrainLoss += loss
+        endTime = time.time()
+        print("[INFO] total time taken to train the model: {:.2f}s".format(
+        	endTime - startTime))
       #   trainCorrect += (pred.argmax(1) == y).type(
    			# torch.float).sum().item()
     with torch.no_grad():
@@ -251,4 +255,8 @@ print(outputs.shape)
 #%%
 
 torch.save(model, 'output/vit_pretrained_on_dtd.pth')
+
+#%%
+
+model = torch.load('output/vit_pretrained_on_dtd.pth')
 
