@@ -1,0 +1,46 @@
+Using mps device
+Training - Epoch 1/21, Loss: 1.1699, Accuracy: 58.5714%
+Testing - Epoch 1/21, Loss: 0.6739, Accuracy: 77.1429%
+Training - Epoch 2/21, Loss: 0.6556, Accuracy: 78.1250%
+Testing - Epoch 2/21, Loss: 0.5339, Accuracy: 82.1429%
+Training - Epoch 3/21, Loss: 0.5350, Accuracy: 82.9464%
+Testing - Epoch 3/21, Loss: 0.5185, Accuracy: 82.3214%
+Training - Epoch 4/21, Loss: 0.4858, Accuracy: 83.9286%
+Testing - Epoch 4/21, Loss: 0.4442, Accuracy: 84.1071%
+Training - Epoch 5/21, Loss: 0.4457, Accuracy: 84.7321%
+Testing - Epoch 5/21, Loss: 0.4308, Accuracy: 85.1786%
+Training - Epoch 6/21, Loss: 0.4188, Accuracy: 86.0268%
+Testing - Epoch 6/21, Loss: 0.4209, Accuracy: 83.9286%
+Training - Epoch 7/21, Loss: 0.3880, Accuracy: 86.7411%
+Testing - Epoch 7/21, Loss: 0.4190, Accuracy: 85.5357%
+Training - Epoch 8/21, Loss: 0.3716, Accuracy: 87.4107%
+Testing - Epoch 8/21, Loss: 0.3969, Accuracy: 86.4286%
+Training - Epoch 9/21, Loss: 0.3676, Accuracy: 87.2768%
+Testing - Epoch 9/21, Loss: 0.4279, Accuracy: 85.0000%
+Training - Epoch 10/21, Loss: 0.3539, Accuracy: 87.7679%
+Testing - Epoch 10/21, Loss: 0.4225, Accuracy: 85.1786%
+Training - Epoch 11/21, Loss: 0.3289, Accuracy: 89.5982%
+Testing - Epoch 11/21, Loss: 0.3882, Accuracy: 85.3571%
+Training - Epoch 12/21, Loss: 0.3317, Accuracy: 88.9732%
+Testing - Epoch 12/21, Loss: 0.3718, Accuracy: 86.4286%
+Training - Epoch 13/21, Loss: 0.3040, Accuracy: 89.9554%
+Testing - Epoch 13/21, Loss: 0.3615, Accuracy: 87.5000%
+Training - Epoch 14/21, Loss: 0.2982, Accuracy: 90.9375%
+Testing - Epoch 14/21, Loss: 0.3616, Accuracy: 87.8571%
+Training - Epoch 15/21, Loss: 0.2889, Accuracy: 90.2679%
+Testing - Epoch 15/21, Loss: 0.3617, Accuracy: 86.9643%
+Training - Epoch 16/21, Loss: 0.2930, Accuracy: 90.3571%
+Testing - Epoch 16/21, Loss: 0.3692, Accuracy: 87.1429%
+Training - Epoch 17/21, Loss: 0.2834, Accuracy: 90.2679%
+Testing - Epoch 17/21, Loss: 0.3668, Accuracy: 86.9643%
+Training - Epoch 18/21, Loss: 0.2884, Accuracy: 90.5357%
+Testing - Epoch 18/21, Loss: 0.3604, Accuracy: 86.9643%
+Training - Epoch 19/21, Loss: 0.2749, Accuracy: 91.1161%
+Testing - Epoch 19/21, Loss: 0.3701, Accuracy: 87.3214%
+Training - Epoch 20/21, Loss: 0.2604, Accuracy: 91.6964%
+Testing - Epoch 20/21, Loss: 0.3621, Accuracy: 86.4286%
+Training - Epoch 21/21, Loss: 0.2664, Accuracy: 91.0714%
+Testing - Epoch 21/21, Loss: 0.3607, Accuracy: 87.3214%
+Training complete.
+
+Process finished with exit code 0
