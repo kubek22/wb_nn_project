@@ -77,6 +77,17 @@ data_loader = RCCN7DataLoader(data_dir=DATA_PATH, batch_size=BATCH_SIZE, shuffle
 
 #%% loading model
 
+class FullyConnectedLayer(nn.Module):
+    def __init__(self, input_size, output_size):
+        super(FullyConnectedLayer, self).__init__()
+        self.fc = nn.Linear(input_size, output_size)
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+        x = self.fc(x)
+        x = self.sigmoid(x)
+        return x
+
 model = torch.load('output/vit_pretrained_on_dtd.pth')
 
 n_classes = data_loader.n_classes
