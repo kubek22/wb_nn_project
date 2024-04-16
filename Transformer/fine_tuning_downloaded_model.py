@@ -7,7 +7,7 @@ from torchvision import datasets
 from torch.utils.data import DataLoader
 import torch.nn as nn
 from sklearn.model_selection import train_test_split
-from torch.optim import Adam
+from torch.optim import Adam, SGD
 import pickle
 import time
 import numpy as np
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 #%% setting parameters
 
 BATCH_SIZE = 16
-EPOCHS = 80
+EPOCHS = 40
 
 SHUFFLE = True
 STRATIFY = True
@@ -104,7 +104,8 @@ model.to(device)
 #%% training
 
 criterion = nn.CrossEntropyLoss()
-optimizer = Adam(model.parameters())
+optimizer = Adam(model.parameters(), lr=0.0005)
+optimizer = SGD(model.parameters())
 
 def train_model(model, criterion, optimizer, train_loader, val_loader, test_loader, num_epochs):
     train_loss_arr = []
@@ -235,9 +236,12 @@ test_acc_arr = results['test_acc_arr']
 
 plt.plot(epochs, train_loss_arr)
 plt.plot(epochs, val_loss_arr)
+plt.legend(('train_loss', 'val_loss'))
+plt.show()
+
 plt.plot(epochs, train_acc_arr)
 plt.plot(epochs, val_acc_arr)
-plt.legend(('train_loss', 'val_loss', 'train_acc', 'val_acc'))
+plt.legend(('train_acc', 'val_acc'))
 plt.show()
 
 print("[INFO] Average test loss: ", test_loss_arr[-1])
