@@ -180,11 +180,8 @@ for e in range(0, EPOCHS):
         opt.step()
         totalTrainLoss += loss
         
-        predicted_labels = (torch.sigmoid(pred) >= 0.5).bool()
-        y = y.bool()
-        correct = ((predicted_labels == y) | (predicted_labels & y)).sum().item()
-        if correct > 0:
-            correct_train_predictions += 1
+        _, labels = torch.max(pred.data, 1)
+        correct_train_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
         total_train_predictions += y.size(0)
         
     with torch.no_grad():
@@ -195,11 +192,8 @@ for e in range(0, EPOCHS):
             y = torch.tensor(y, dtype=pred.dtype)
             totalValLoss += lossFn(pred, y)
             
-            predicted_labels = (torch.sigmoid(pred) >= 0.5).bool()
-            y = y.bool()
-            correct = ((predicted_labels == y) | (predicted_labels & y)).sum().item()
-            if correct > 0:
-                correct_val_predictions += 1
+            _, labels = torch.max(pred.data, 1)
+            correct_val_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
             total_val_predictions += y.size(0)
             
     avgTrainLoss = totalTrainLoss / train_steps
@@ -235,11 +229,8 @@ with torch.no_grad():
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
         test_loss += lossFn(pred, y)
-        predicted_labels = (torch.sigmoid(pred) >= 0.5).bool()
-        y = y.bool()
-        correct = ((predicted_labels == y) | (predicted_labels & y)).sum().item()
-        if correct > 0:
-            correct_predictions += 1
+        _, labels = torch.max(pred.data, 1)
+        correct_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
         total_predictions += y.size(0)
         
 avg_test_loss = test_loss / test_steps
@@ -250,12 +241,16 @@ print("[INFO] Accuracy: ", accuracy)
     
 #%% example prediction
 
-i = 110
+i = 0
 with torch.no_grad():
-    outputs = model(x_train[i].unsqueeze(0).to(device))
-    
-np.argmax(outputs[0].to('cpu'))
-np.argmax(y_train[i])
+    pred = model(x_train[i].unsqueeze(0).to(device))
+    _, label = torch.max(pred.data, 1)
+    res = ((label == y_train[i]) & (y_train[i] == 1)).any().sum().item()
+    res = y_train[i][label]
+    if res == 0:
+        print(False)
+    else:
+        print(True)
 
 #%% saving results
 
@@ -268,6 +263,10 @@ def save_dict_to_file(data_dict, file_path):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+save_dict_to_file(H, 'output/vit_pretrained_on_dtd_training_loss.pkl')
+
+#%%
+
 def load_dict_from_file(file_path):
     try:
         with open(file_path, 'rb') as file:
@@ -276,10 +275,6 @@ def load_dict_from_file(file_path):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
-
-save_dict_to_file(H, 'output/vit_pretrained_on_dtd_training_loss.pkl')
-
-#%%
 
 loaded_loss = load_dict_from_file('output/vit_pretrained_on_dtd_training_loss.pkl')
 epochs = np.arange(1, EPOCHS + 1)
