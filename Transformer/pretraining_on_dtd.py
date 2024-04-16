@@ -22,6 +22,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 import torch
 from torch.utils.data import Dataset
+import pickle
 
 #%% setting parameters
 
@@ -183,7 +184,7 @@ for e in range(0, EPOCHS):
     # trainCorrect = 0
     # valCorrect = 0
     for (x, y) in train_dataloader:
-        startTime = time.time()
+        # startTime = time.time()
         (x, y) = (x.to(device), y.to(device))
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
@@ -193,9 +194,9 @@ for e in range(0, EPOCHS):
         loss.backward()
         opt.step()
         totalTrainLoss += loss
-        endTime = time.time()
-        print("[INFO] total time taken to train the model: {:.2f}s".format(
-        	endTime - startTime))
+        # endTime = time.time()
+        # print("[INFO] total time taken to train the model: {:.2f}s".format(
+        # 	endTime - startTime))
       #   trainCorrect += (pred.argmax(1) == y).type(
    			# torch.float).sum().item()
     with torch.no_grad():
@@ -255,6 +256,42 @@ print(outputs.shape)
 #%%
 
 torch.save(model, 'output/vit_pretrained_on_dtd.pth')
+
+def save_dict_to_file(data_dict, file_path):
+    """
+    Saves a dictionary to a file using pickle.
+
+    Args:
+    data_dict (dict): The dictionary to save.
+    file_path (str): The path to the file where the dictionary will be saved.
+    """
+    try:
+        with open(file_path, 'wb') as file:
+            pickle.dump(data_dict, file)
+        print(f"Dictionary has been saved to {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+def load_dict_from_file(file_path):
+    """
+    Loads a dictionary from a file using pickle.
+
+    Args:
+    file_path (str): The path to the file from which to load the dictionary.
+
+    Returns:
+    dict: The dictionary loaded from the file.
+    """
+    try:
+        with open(file_path, 'rb') as file:
+            data_dict = pickle.load(file)
+        return data_dict
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+save_dict_to_file(H, 'output/vit_pretrained_on_dtd_training_loss.pkl')
+loaded_loss = load_dict_from_file('output/vit_pretrained_on_dtd_training_loss.pkl')
 
 #%%
 
