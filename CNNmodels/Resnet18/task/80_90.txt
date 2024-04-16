@@ -1,0 +1,110 @@
+/Users/katebokhan/anaconda3/envs/6.86x/bin/python /Users/katebokhan/Desktop/wb_nn_project-main/CNNmodels/Resnet18/task/resnet18_50_100.py
+Using mps device
+/Users/katebokhan/anaconda3/envs/6.86x/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/Users/katebokhan/anaconda3/envs/6.86x/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+
+Epoch 1
+----------------------------------------------
+loss: 0.329222  [    0/11280]
+loss: 0.286045  [ 2560/11280]
+loss: 0.223920  [ 5120/11280]
+loss: 0.357210  [ 7680/11280]
+loss: 0.575509  [10240/11280]
+Training,	Loss: 0.343	| Accuracy: 90.160
+Validation,	Loss: 2.451	| Accuracy: 51.968
+
+Epoch 2
+----------------------------------------------
+loss: 0.325485  [    0/11280]
+loss: 0.323035  [ 2560/11280]
+loss: 0.303512  [ 5120/11280]
+loss: 0.291039  [ 7680/11280]
+loss: 0.427003  [10240/11280]
+Training,	Loss: 0.336	| Accuracy: 90.390
+Validation,	Loss: 2.443	| Accuracy: 51.915
+
+Epoch 3
+----------------------------------------------
+loss: 0.281286  [    0/11280]
+loss: 0.278551  [ 2560/11280]
+loss: 0.246343  [ 5120/11280]
+loss: 0.333664  [ 7680/11280]
+loss: 0.595628  [10240/11280]
+Training,	Loss: 0.358	| Accuracy: 90.009
+Validation,	Loss: 2.446	| Accuracy: 52.181
+
+Epoch 4
+----------------------------------------------
+loss: 0.316650  [    0/11280]
+loss: 0.196042  [ 2560/11280]
+loss: 0.289391  [ 5120/11280]
+loss: 0.488431  [ 7680/11280]
+loss: 0.352026  [10240/11280]
+Training,	Loss: 0.344	| Accuracy: 90.248
+Validation,	Loss: 2.410	| Accuracy: 52.128
+
+Epoch 5
+----------------------------------------------
+loss: 0.297634  [    0/11280]
+loss: 0.312123  [ 2560/11280]
+loss: 0.494291  [ 5120/11280]
+loss: 0.426202  [ 7680/11280]
+loss: 0.230425  [10240/11280]
+Training,	Loss: 0.332	| Accuracy: 90.647
+Validation,	Loss: 2.415	| Accuracy: 51.596
+
+Epoch 6
+----------------------------------------------
+loss: 0.400105  [    0/11280]
+loss: 0.348059  [ 2560/11280]
+loss: 0.239928  [ 5120/11280]
+loss: 0.467261  [ 7680/11280]
+loss: 0.415529  [10240/11280]
+Training,	Loss: 0.333	| Accuracy: 90.691
+Validation,	Loss: 2.455	| Accuracy: 52.021
+
+Epoch 7
+----------------------------------------------
+loss: 0.290030  [    0/11280]
+loss: 0.397905  [ 2560/11280]
+loss: 0.298756  [ 5120/11280]
+loss: 0.269379  [ 7680/11280]
+loss: 0.329930  [10240/11280]
+Training,	Loss: 0.335	| Accuracy: 90.514
+Validation,	Loss: 2.427	| Accuracy: 52.181
+
+Epoch 8
+----------------------------------------------
+loss: 0.281929  [    0/11280]
+loss: 0.318439  [ 2560/11280]
+loss: 0.236869  [ 5120/11280]
+loss: 0.354196  [ 7680/11280]
+loss: 0.306723  [10240/11280]
+Training,	Loss: 0.334	| Accuracy: 90.523
+Validation,	Loss: 2.468	| Accuracy: 51.489
+
+Epoch 9
+----------------------------------------------
+loss: 0.404778  [    0/11280]
+loss: 0.257173  [ 2560/11280]
+loss: 0.413123  [ 5120/11280]
+loss: 0.456659  [ 7680/11280]
+loss: 0.381420  [10240/11280]
+Training,	Loss: 0.349	| Accuracy: 90.133
+Validation,	Loss: 2.413	| Accuracy: 52.340
+
+Epoch 10
+----------------------------------------------
+loss: 0.319542  [    0/11280]
+loss: 0.355066  [ 2560/11280]
+loss: 0.305078  [ 5120/11280]
+loss: 0.248027  [ 7680/11280]
+loss: 0.328549  [10240/11280]
+Training,	Loss: 0.329	| Accuracy: 90.674
+Validation,	Loss: 2.411	| Accuracy: 52.128
+Time usage: 0:48:43
+Finished Training
+
+Process finished with exit code 0

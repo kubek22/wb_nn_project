@@ -6,6 +6,9 @@ from torch.utils.data import DataLoader, random_split
 import torch.nn as nn
 import util
 
+train_acc = []
+test_acc = []
+
 class RCCN7DataLoader:
     def __init__(self, data_dir, batch_size=32, shuffle=True):
         self.data_dir = data_dir
@@ -55,7 +58,8 @@ resnet10 = resnet18.to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(resnet18.parameters(), lr=0.002, momentum=0.9)
 
-epochs = 21
+#most optimal
+epochs = 23
 
 def train_model(model, criterion, optimizer, train_loader, test_loader, num_epochs=epochs):
     for epoch in range(num_epochs):
@@ -87,7 +91,12 @@ def train_model(model, criterion, optimizer, train_loader, test_loader, num_epoc
         test_loss, test_accuracy = evaluate_model(model, criterion, test_loader)
         print(f'Testing - Epoch {epoch+1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}%')
 
+        train_acc.append(epoch_accuracy)
+        test_acc.append(test_accuracy)
+
     print('Training complete.')
+    print('Train:', train_acc)
+    print('Test:', test_acc)
 
 def evaluate_model(model, criterion, test_loader):
     model.eval()
@@ -117,4 +126,4 @@ test_loader = data_loader.get_test_dataloader()
 
 train_model(resnet18, criterion, optimizer, train_loader, test_loader)
 
-torch.save(resnet18.state_dict(), 'transfer_learning_resnet18_model.pth')
+torch.save(resnet18.state_dict(), 'transfer_learning_resnet18.pth')

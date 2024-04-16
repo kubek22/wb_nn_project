@@ -9,7 +9,7 @@ from util import input_image_size
 
 
 def visualize_kernels_and_feature_maps(image_number):
-    path = "our_resnet18_pretrained_DTD.pth"    # take model from train.py
+    path = "our_resnet18_pretrained_DTD.pth"    # take model from train_resnet18_from_0_on_DTD.py
     model = ResNet18().to(get_device())
     model.load_state_dict(torch.load(path))
     kernels = model.conv1.weight
