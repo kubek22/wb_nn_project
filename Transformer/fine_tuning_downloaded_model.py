@@ -237,11 +237,15 @@ test_acc_arr = results['test_acc_arr']
 plt.plot(epochs, train_loss_arr)
 plt.plot(epochs, val_loss_arr)
 plt.legend(('train_loss', 'val_loss'))
+plt.xlabel('epoch')
+plt.ylabel('loss')
 plt.show()
 
 plt.plot(epochs, train_acc_arr)
 plt.plot(epochs, val_acc_arr)
 plt.legend(('train_acc', 'val_acc'))
+plt.xlabel('epoch')
+plt.ylabel('accuracy [%]')
 plt.show()
 
 print("[INFO] Average test loss: ", test_loss_arr[-1])
