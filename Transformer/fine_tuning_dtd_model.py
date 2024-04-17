@@ -6,7 +6,7 @@ from torchvision import datasets
 from torch.utils.data import DataLoader
 import torch.nn as nn
 from sklearn.model_selection import train_test_split
-from torch.optim import Adam
+from torch.optim import Adam, SGD, RMSprop
 import pickle
 import time
 import numpy as np
@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 #%% setting parameters
 
 BATCH_SIZE = 16
-EPOCHS = 80
+EPOCHS = 40
 
 SHUFFLE = True
 STRATIFY = True
@@ -35,7 +35,7 @@ DATA_PATH = '../data/RSSCN7-master'
 #%% loading data
 
 class RCCN7DataLoader:
-    def __init__(self, data_dir, batch_size=16, shuffle=True, img_size=(224, 224), set_sizes=(0.55, 0.25, 0.20), stratify=False, random_seed=0):
+    def __init__(self, data_dir, batch_size=BATCH_SIZE, shuffle=True, img_size=(224, 224), set_sizes=(0.55, 0.25, 0.20), stratify=False, random_seed=0):
         self.data_dir = data_dir
         self.batch_size = batch_size
         self.shuffle = shuffle
@@ -90,7 +90,8 @@ class FullyConnectedLayer(nn.Module):
         x = self.sigmoid(x)
         return x
 
-model = torch.load('output/vit_pretrained_on_dtd.pth')
+# model = torch.load('output/vit_pretrained_on_dtd.pth')
+model = torch.load('output/fine_tuned_vit_pretrained_on_dtd.pth')
 
 n_classes = data_loader.n_classes
 out_features = 47
@@ -114,7 +115,7 @@ model.to(device)
 #%% training
 
 criterion = nn.CrossEntropyLoss()
-optimizer = Adam(model.parameters())
+optimizer = Adam(model.parameters(), lr=0.0001)
 
 def train_model(model, criterion, optimizer, train_loader, val_loader, test_loader, num_epochs):
     train_loss_arr = []
@@ -153,7 +154,7 @@ def train_model(model, criterion, optimizer, train_loader, val_loader, test_load
         train_loss_arr.append(train_loss)
         train_acc_arr.append(train_accuracy)
         
-        print(f'Training - Epoch {epoch+1}/{num_epochs}, Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}%')
+        print(f'Training   - Epoch {epoch+1}/{num_epochs}, Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}%')
         
         val_loss, val_accuracy = evaluate_model(model, criterion, val_loader)
         
@@ -167,7 +168,7 @@ def train_model(model, criterion, optimizer, train_loader, val_loader, test_load
         test_loss_arr.append(test_loss)
         test_acc_arr.append(test_accuracy)
         
-        print(f'Testing - Epoch {epoch+1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}%')
+        print(f'Testing    - Epoch {epoch+1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}%\n')
 
     print('Training complete.')
     
@@ -218,13 +219,13 @@ print("[INFO] total time taken to train the model: {:.2f}s".format(
 
 #%% saving results
 
-torch.save(model, 'output/fine_tuned_vit_pretrained_on_dtd.pth')
+torch.save(model, 'output/fine_tuned_vit_pretrained_on_dtd_80.pth')
 
 def save(array, filename):
     with open(filename, 'wb') as file:
         pickle.dump(array, file)
         
-save(results, 'output/fine_tuned_vit_pretrained_on_dtd_results.pkl')
+save(results, 'output/fine_tuned_vit_pretrained_on_dtd_results_80.pkl')
 
 #%%
 
@@ -233,7 +234,7 @@ def load(filename):
         array = pickle.load(file)
     return array
 
-results = load('output/fine_tuned_vit_pretrained_on_dtd_results.pkl')
+results = load('output/fine_tuned_vit_pretrained_on_dtd_results_80.pkl')
 epochs = np.arange(1, EPOCHS + 1)
 
 train_loss_arr = results['train_loss_arr']

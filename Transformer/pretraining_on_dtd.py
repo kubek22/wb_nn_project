@@ -22,7 +22,7 @@ BATCH_SIZE = 16
 IMG_DIM = 224
 IMG_HEIGHT, IMG_WIDTH = IMG_DIM, IMG_DIM
 IMAGE_SIZE=(IMG_HEIGHT, IMG_WIDTH)
-EPOCHS = 40
+EPOCHS = 460
 TEST_SPLIT = 0.20
 VAL_SPLIT = 0.25
 
@@ -121,7 +121,8 @@ test_dataloader = DataLoader(test_set, batch_size=BATCH_SIZE, shuffle=False)
 
 # https://github.com/lukemelas/PyTorch-Pretrained-ViT
 
-model = ViT('B_16', pretrained=False)
+# model = ViT('B_16', pretrained=False)
+model = torch.load('output/vit_pretrained_on_dtd_2.pth') #continuing training
 
 in_features = model.fc.in_features
 
@@ -171,6 +172,7 @@ for e in range(0, EPOCHS):
     total_val_predictions = 0
     
     for (x, y) in train_dataloader:
+        start = time.time()
         (x, y) = (x.to(device), y.to(device))
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
@@ -183,6 +185,8 @@ for e in range(0, EPOCHS):
         _, labels = torch.max(pred.data, 1)
         correct_train_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
         total_train_predictions += y.size(0)
+        end = time.time()
+        print(f"Batch calculation time: {end - start}")
         
     with torch.no_grad():
         model.eval()
@@ -207,6 +211,8 @@ for e in range(0, EPOCHS):
     H["val_acc"].append(val_accuracy)
     
     print("[INFO] EPOCH: {}/{}".format(e + 1, EPOCHS))
+    torch.save(model, 'output/vit_pretrained_on_dtd_2.pth')
+    #epochs so far: 55
 
 endTime = time.time()
 print("[INFO] total time taken to train the model: {:.2f}s".format(
@@ -254,7 +260,7 @@ with torch.no_grad():
 
 #%% saving results
 
-torch.save(model, 'output/vit_pretrained_on_dtd.pth')
+torch.save(model, 'output/vit_pretrained_on_dtd_2.pth')
 
 def save_dict_to_file(data_dict, file_path):
     try:
