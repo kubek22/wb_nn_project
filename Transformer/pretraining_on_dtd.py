@@ -1,41 +1,32 @@
 #%%
 
 from pytorch_pretrained_vit import ViT
-from sklearn.metrics import classification_report
-from torch.utils.data import random_split
 from torch.utils.data import DataLoader
-from torchvision.transforms import ToTensor
-from torchvision.datasets import KMNIST
 from torch.optim import Adam
 from torch import nn
-import matplotlib.pyplot as plt
 import numpy as np
-import argparse
 import torch
 import time
 import os
 from PIL import Image
-import torch
 from torchvision import transforms
-import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-import torch
 from torch.utils.data import Dataset
+import pickle
+import matplotlib.pyplot as plt
 
 #%% setting parameters
 
-INIT_LR = 1e-3
-BATCH_SIZE = 4
-IMG_DIM = 384
+BATCH_SIZE = 16
+IMG_DIM = 224
 IMG_HEIGHT, IMG_WIDTH = IMG_DIM, IMG_DIM
 IMAGE_SIZE=(IMG_HEIGHT, IMG_WIDTH)
-EPOCHS = 10
+EPOCHS = 40
 TEST_SPLIT = 0.20
 VAL_SPLIT = 0.25
 
-# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-device = torch.device("cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 #%% loading data
 
@@ -59,8 +50,6 @@ def load_images(directory):
     return images
 
 images = load_images(DTD_PATH)
-len(images)
-print(images[0].size())
 
 DTD_CLASSES_PATH = "../data/dtd/labels/labels_joint_anno.txt"
 
@@ -74,7 +63,6 @@ def parse_labels_from_text_file(file_path):
     return labels
 
 labels = parse_labels_from_text_file(DTD_CLASSES_PATH)
-labels[:10]
 
 #%% parsing labels
 
@@ -132,13 +120,10 @@ test_dataloader = DataLoader(test_set, batch_size=BATCH_SIZE, shuffle=False)
 #%% initializing ViT
 
 # https://github.com/lukemelas/PyTorch-Pretrained-ViT
-# model = ViT('B_16_imagenet1k', pretrained=True)
-model = ViT('B_16_imagenet1k', pretrained=False)
+
+model = ViT('B_16', pretrained=False)
 
 in_features = model.fc.in_features
-
-# Define a new fully connected layer with 47 output features
-# new_fc_layer = nn.Linear(in_features, n_classes)
 
 class FullyConnectedLayer(nn.Module):
     def __init__(self, input_size, output_size):
@@ -151,17 +136,14 @@ class FullyConnectedLayer(nn.Module):
         x = self.sigmoid(x)
         return x
 
-# Create the fully connected layer
 new_fc_layer = FullyConnectedLayer(in_features, n_classes)
-
-# Replace the last fully connected layer in the model with the new one
 model.fc = new_fc_layer
 
 model = model.to(device)
 
 #%% training
 
-opt = Adam(model.parameters(), lr=INIT_LR)
+opt = Adam(model.parameters())
 lossFn = nn.BCELoss()
 
 H = {
@@ -178,22 +160,30 @@ startTime = time.time()
 
 for e in range(0, EPOCHS):
     model.train()
+    
     totalTrainLoss = 0
     totalValLoss = 0
-    # trainCorrect = 0
-    # valCorrect = 0
+    
+    correct_train_predictions = 0
+    total_train_predictions = 0
+    
+    correct_val_predictions = 0
+    total_val_predictions = 0
+    
     for (x, y) in train_dataloader:
         (x, y) = (x.to(device), y.to(device))
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
-        # here sth wrong (maybe it needs encoding)
         loss = lossFn(pred, y)
         opt.zero_grad()
         loss.backward()
         opt.step()
         totalTrainLoss += loss
-      #   trainCorrect += (pred.argmax(1) == y).type(
-   			# torch.float).sum().item()
+        
+        _, labels = torch.max(pred.data, 1)
+        correct_train_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
+        total_train_predictions += y.size(0)
+        
     with torch.no_grad():
         model.eval()
         for (x, y) in val_dataloader:
@@ -201,23 +191,23 @@ for e in range(0, EPOCHS):
             pred = model(x)
             y = torch.tensor(y, dtype=pred.dtype)
             totalValLoss += lossFn(pred, y)
-       #      valCorrect += (pred.argmax(1) == y).type(
-   				# torch.float).sum().item()
+            
+            _, labels = torch.max(pred.data, 1)
+            correct_val_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
+            total_val_predictions += y.size(0)
+            
     avgTrainLoss = totalTrainLoss / train_steps
     avgValLoss = totalValLoss / val_steps
-    # trainCorrect = trainCorrect / len(train_dataloader.dataset)
-    # valCorrect = valCorrect / len(val_dataloader.dataset)
     H["train_loss"].append(avgTrainLoss.cpu().detach().numpy())
-    # H["train_acc"].append(trainCorrect)
     H["val_loss"].append(avgValLoss.cpu().detach().numpy())
-    # H["val_acc"].append(valCorrect)
+    
+    train_accuracy = correct_train_predictions / total_train_predictions
+    val_accuracy = correct_val_predictions / total_val_predictions
+    H["train_acc"].append(train_accuracy)
+    H["val_acc"].append(val_accuracy)
+    
     print("[INFO] EPOCH: {}/{}".format(e + 1, EPOCHS))
-    # print("Train loss: {:.6f}, Train accuracy: {:.4f}".format(
-   	# 	avgTrainLoss, trainCorrect))
-    # print("Val loss: {:.6f}, Val accuracy: {:.4f}\n".format(
-   	# 	avgValLoss, valCorrect))
 
-# finish measuring how long training took
 endTime = time.time()
 print("[INFO] total time taken to train the model: {:.2f}s".format(
 	endTime - startTime))
@@ -228,27 +218,75 @@ print("[INFO] evaluating network...")
 
 test_loss = 0
 test_steps = len(test_dataloader.dataset) // BATCH_SIZE
+correct_predictions = 0
+total_predictions = 0
 
 with torch.no_grad():
     model.eval()
     preds = []
     for (x, y) in test_dataloader:
-        x = x.to(device)
+        x, y = x.to(device), y.to(device)
         pred = model(x)
         y = torch.tensor(y, dtype=pred.dtype)
         test_loss += lossFn(pred, y)
+        _, labels = torch.max(pred.data, 1)
+        correct_predictions += ((labels.unsqueeze(1) == y) & (y == 1)).any(dim=1).sum().item()
+        total_predictions += y.size(0)
         
 avg_test_loss = test_loss / test_steps
+accuracy = correct_predictions / total_predictions
         
 print("[INFO] Average test loss: ", avg_test_loss)
+print("[INFO] Accuracy: ", accuracy)
     
 #%% example prediction
 
+i = 0
 with torch.no_grad():
-    outputs = model(x_train[0].unsqueeze(0).to(device))
-print(outputs.shape)
+    pred = model(x_train[i].unsqueeze(0).to(device))
+    _, label = torch.max(pred.data, 1)
+    res = ((label == y_train[i]) & (y_train[i] == 1)).any().sum().item()
+    res = y_train[i][label]
+    if res == 0:
+        print(False)
+    else:
+        print(True)
+
+#%% saving results
+
+torch.save(model, 'output/vit_pretrained_on_dtd.pth')
+
+def save_dict_to_file(data_dict, file_path):
+    try:
+        with open(file_path, 'wb') as file:
+            pickle.dump(data_dict, file)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+save_dict_to_file(H, 'output/vit_pretrained_on_dtd_training_loss.pkl')
 
 #%%
 
-torch.save(model, 'output/vit_pretrained_on_dtd.pth')
+def load_dict_from_file(file_path):
+    try:
+        with open(file_path, 'rb') as file:
+            data_dict = pickle.load(file)
+        return data_dict
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+loaded_loss = load_dict_from_file('output/vit_pretrained_on_dtd_training_loss.pkl')
+epochs = np.arange(1, EPOCHS + 1)
+train_loss = loaded_loss['train_loss']
+val_loss = loaded_loss['val_loss']
+
+plt.plot(epochs, train_loss)
+plt.plot(epochs, val_loss)
+plt.legend(('train_loss', 'val_loss'))
+plt.show()
+
+#%%
+
+model = torch.load('output/vit_pretrained_on_dtd.pth')
 
