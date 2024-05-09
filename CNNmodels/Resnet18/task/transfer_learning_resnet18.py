@@ -45,21 +45,22 @@ data_loader = RCCN7DataLoader(data_dir=data_dir, batch_size=batch_size, shuffle=
 
 resnet18 = models.resnet18(pretrained=True)
 
+#freeze all the weights
 for param in resnet18.parameters():
     param.requires_grad = False
 
-
 num_classes = 7
+#the last layer's weights were not freezed
 resnet18.fc = nn.Linear(resnet18.fc.in_features, num_classes)
 
 device = util.get_device()
-resnet10 = resnet18.to(device)
+resnet18 = resnet18.to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(resnet18.parameters(), lr=0.002, momentum=0.9)
 
 #most optimal
-epochs = 23
+epochs = 100
 
 def train_model(model, criterion, optimizer, train_loader, test_loader, num_epochs=epochs):
     for epoch in range(num_epochs):
