@@ -3,6 +3,9 @@ from torchvision.models import resnet18
 import torch.nn as nn
 import torch.optim as optim
 import time
+import random
+
+random.seed(42)
 
 time0 = time.time()
 
@@ -30,7 +33,7 @@ import torch
 from torch.utils.data import DataLoader, TensorDataset
 
 
-def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs):
+def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate):
     device = torch.device('mps')
     model.to(device)
     counter = 0
@@ -85,6 +88,11 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         train_accuracy = correct / total
         num_images = len(easy_enough_loader.dataset)
 
+        if train_accuracy == 1:
+            learning_rate = 0.0008
+
+        print("learing_rate = ", learning_rate)
+
         print(
             f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}, Images: {num_images}, Lambda: {lambda_current:.2f}, Time: {time.time() - time0:.2f} seconds')
 
@@ -126,7 +134,7 @@ def evaluate_model(model, test_loader, criterion):
     print(f'Test Loss: {test_loss:.4f}, Test Accuracy: {test_accuracy:.4f}')
 
 
-train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs)
+train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs, learning_rate)
 
 
 
