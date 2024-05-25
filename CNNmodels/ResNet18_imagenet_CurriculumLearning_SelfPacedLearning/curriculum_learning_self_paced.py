@@ -1,5 +1,8 @@
 from RSSCN7_dataLoader import RSSCN7_DataLoader
 from torchvision.models import resnet18
+from ..Resnet18.task.model import ResNet18
+import torch
+from torch.utils.data import DataLoader, TensorDataset
 import torch.nn as nn
 import torch.optim as optim
 import time
@@ -24,14 +27,20 @@ model = resnet18(weights='ResNet18_Weights.DEFAULT')
 num_filters = model.fc.in_features
 model.fc = nn.Linear(num_filters, 7)
 
+######### In case of model pretrained on DTD: uploading the weights #################################################
+
+# pretrained_model_path = "/kaggle/input/resnet18-pretrained-on-dtd/pytorch/version1/1/resnet18_trained_on_DTD_from_80_to_90.pth"
+# pretrained_resnet18 = ResNet18()
+# pretrained_resnet18.load_state_dict(torch.load(pretrained_model_path, map_location=torch.device(device)))
+
+# model = pretrained_resnet18.to(device)
+
+# model.fc = nn.Linear(47, 7)
+
 criterion = nn.CrossEntropyLoss()
 opitmizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 step = 0.03
-
-import torch
-from torch.utils.data import DataLoader, TensorDataset
-
 
 def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate):
     device = torch.device('mps')
