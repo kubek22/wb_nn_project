@@ -12,9 +12,7 @@ def k_nearest_metric(k, model, data_loader, device, labels=None):
     components = list(model.children())
     truncated_model = nn.Sequential(*components[:-1])
     
-    try:
-        components[1]
-    except:
+    if len(components) == 1:
         components = list(components[0].children())
         truncated_model = nn.Sequential(*list(components)[:-1])
         
@@ -37,12 +35,23 @@ def k_nearest_metric(k, model, data_loader, device, labels=None):
     
     if labels is None:
         labels = get_labels(data_loader)
-    
+
+    if len(tensors) > 1 and tensors[-1].shape != tensors[0].shape:
+        last_tensor = tensors[-1]
+        tensors = tensors[:-1]
+    else:
+        last_tensor = None
+        
     tensors = torch.stack(tensors)
     tensor_length = shape.numel()
     tensors_shape = torch.Size([tensors.shape[0] * tensors.shape[1], tensor_length])
     tensors = tensors.view(tensors_shape)
     
+    if last_tensor is not None:
+        last_tensor_shape = torch.Size([last_tensor.shape[0], tensor_length])
+        last_tensor = last_tensor.view(last_tensor_shape)
+        tensors = torch.cat([tensors, last_tensor], dim=0)
+
     inf_tensor = torch.full(torch.Size([tensor_length]), float('inf'))
     
     metric_results = []
