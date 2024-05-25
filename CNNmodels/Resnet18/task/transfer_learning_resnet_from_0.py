@@ -68,7 +68,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(pretrained_resnet18.parameters(), lr=0.002, momentum=0.9)
 
 # Training parameters
-epochs = 100
+epochs = 250
 
 def train_model(model, criterion, optimizer, train_loader, test_loader, num_epochs=epochs):
     for epoch in range(num_epochs):
