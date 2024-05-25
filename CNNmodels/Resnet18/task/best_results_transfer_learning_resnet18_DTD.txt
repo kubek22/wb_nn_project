@@ -1,0 +1,1001 @@
+learing_rate =  0.001
+Training - Epoch 1/250, Loss: 1.2250, Accuracy: 70.7143%
+Testing - Epoch 1/250, Loss: 0.4882, Accuracy: 83.9286%
+Time: 23.87 seconds
+learing_rate =  0.001
+Training - Epoch 2/250, Loss: 0.3847, Accuracy: 85.8482%
+Testing - Epoch 2/250, Loss: 0.4370, Accuracy: 84.2857%
+Time: 47.79 seconds
+learing_rate =  0.001
+Training - Epoch 3/250, Loss: 0.2868, Accuracy: 89.2411%
+Testing - Epoch 3/250, Loss: 0.3728, Accuracy: 86.7857%
+Time: 71.44 seconds
+learing_rate =  0.001
+Training - Epoch 4/250, Loss: 0.2066, Accuracy: 92.0982%
+Testing - Epoch 4/250, Loss: 0.3598, Accuracy: 88.3929%
+Time: 95.10 seconds
+learing_rate =  0.0005
+Training - Epoch 5/250, Loss: 0.1582, Accuracy: 94.4643%
+Testing - Epoch 5/250, Loss: 0.3682, Accuracy: 89.2857%
+Time: 118.43 seconds
+learing_rate =  0.0005
+Training - Epoch 6/250, Loss: 0.1397, Accuracy: 94.8661%
+Testing - Epoch 6/250, Loss: 0.4952, Accuracy: 84.8214%
+Time: 142.02 seconds
+learing_rate =  0.0005
+Training - Epoch 7/250, Loss: 0.1402, Accuracy: 94.6875%
+Testing - Epoch 7/250, Loss: 0.4290, Accuracy: 86.7857%
+Time: 166.35 seconds
+learing_rate =  0.0005
+Training - Epoch 8/250, Loss: 0.1400, Accuracy: 94.5982%
+Testing - Epoch 8/250, Loss: 0.5190, Accuracy: 84.1071%
+Time: 189.99 seconds
+learing_rate =  0.0005
+Training - Epoch 9/250, Loss: 0.1088, Accuracy: 95.9821%
+Testing - Epoch 9/250, Loss: 0.7125, Accuracy: 79.8214%
+Time: 213.42 seconds
+learing_rate =  0.0005
+Training - Epoch 10/250, Loss: 0.1112, Accuracy: 95.9821%
+Testing - Epoch 10/250, Loss: 0.4072, Accuracy: 88.0357%
+Time: 237.19 seconds
+learing_rate =  0.0005
+Training - Epoch 11/250, Loss: 0.0838, Accuracy: 96.7857%
+Testing - Epoch 11/250, Loss: 0.4415, Accuracy: 89.1071%
+Time: 260.77 seconds
+learing_rate =  0.0005
+Training - Epoch 12/250, Loss: 0.0748, Accuracy: 97.0982%
+Testing - Epoch 12/250, Loss: 0.4286, Accuracy: 86.7857%
+Time: 285.04 seconds
+learing_rate =  0.0005
+Training - Epoch 13/250, Loss: 0.0562, Accuracy: 98.3482%
+Testing - Epoch 13/250, Loss: 0.3876, Accuracy: 88.5714%
+Time: 308.72 seconds
+learing_rate =  0.0005
+Training - Epoch 14/250, Loss: 0.0775, Accuracy: 97.2321%
+Testing - Epoch 14/250, Loss: 0.5287, Accuracy: 85.5357%
+Time: 332.64 seconds
+learing_rate =  0.0005
+Training - Epoch 15/250, Loss: 0.0667, Accuracy: 97.6786%
+Testing - Epoch 15/250, Loss: 0.4585, Accuracy: 89.6429%
+Time: 356.33 seconds
+learing_rate =  0.0005
+Training - Epoch 16/250, Loss: 0.0408, Accuracy: 98.5268%
+Testing - Epoch 16/250, Loss: 0.3566, Accuracy: 88.0357%
+Time: 379.92 seconds
+learing_rate =  0.0005
+Training - Epoch 17/250, Loss: 0.0423, Accuracy: 98.4375%
+Testing - Epoch 17/250, Loss: 0.5452, Accuracy: 84.8214%
+Time: 403.92 seconds
+learing_rate =  0.0005
+Training - Epoch 18/250, Loss: 0.0824, Accuracy: 97.5446%
+Testing - Epoch 18/250, Loss: 0.4030, Accuracy: 88.3929%
+Time: 427.62 seconds
+learing_rate =  0.0005
+Training - Epoch 19/250, Loss: 0.0615, Accuracy: 98.1696%
+Testing - Epoch 19/250, Loss: 0.4350, Accuracy: 89.4643%
+Time: 451.57 seconds
+learing_rate =  0.0005
+Training - Epoch 20/250, Loss: 0.0353, Accuracy: 99.0179%
+Testing - Epoch 20/250, Loss: 0.3709, Accuracy: 89.4643%
+Time: 475.85 seconds
+learing_rate =  0.0005
+Training - Epoch 21/250, Loss: 0.0480, Accuracy: 98.5714%
+Testing - Epoch 21/250, Loss: 0.5418, Accuracy: 86.7857%
+Time: 500.03 seconds
+learing_rate =  0.0005
+Training - Epoch 22/250, Loss: 0.0504, Accuracy: 98.1696%
+Testing - Epoch 22/250, Loss: 0.5248, Accuracy: 86.0714%
+Time: 524.17 seconds
+learing_rate =  0.0005
+Training - Epoch 23/250, Loss: 0.0722, Accuracy: 97.2768%
+Testing - Epoch 23/250, Loss: 0.6375, Accuracy: 85.8929%
+Time: 548.50 seconds
+learing_rate =  0.0005
+Training - Epoch 24/250, Loss: 0.0996, Accuracy: 96.4286%
+Testing - Epoch 24/250, Loss: 0.5925, Accuracy: 84.8214%
+Time: 572.72 seconds
+learing_rate =  0.0005
+Training - Epoch 25/250, Loss: 0.0794, Accuracy: 97.0982%
+Testing - Epoch 25/250, Loss: 0.8242, Accuracy: 81.0714%
+Time: 597.77 seconds
+learing_rate =  0.0005
+Training - Epoch 26/250, Loss: 0.0444, Accuracy: 98.4821%
+Testing - Epoch 26/250, Loss: 0.3781, Accuracy: 88.5714%
+Time: 622.29 seconds
+learing_rate =  0.0005
+Training - Epoch 27/250, Loss: 0.0158, Accuracy: 99.5089%
+Testing - Epoch 27/250, Loss: 0.3563, Accuracy: 88.9286%
+Time: 646.69 seconds
+learing_rate =  0.0005
+Training - Epoch 28/250, Loss: 0.0476, Accuracy: 98.5714%
+Testing - Epoch 28/250, Loss: 0.4788, Accuracy: 87.8571%
+Time: 670.73 seconds
+learing_rate =  0.0005
+Training - Epoch 29/250, Loss: 0.0352, Accuracy: 98.7946%
+Testing - Epoch 29/250, Loss: 0.4473, Accuracy: 88.2143%
+Time: 695.34 seconds
+learing_rate =  0.0005
+Training - Epoch 30/250, Loss: 0.0082, Accuracy: 99.8214%
+Testing - Epoch 30/250, Loss: 0.3211, Accuracy: 90.1786%
+Time: 720.00 seconds
+learing_rate =  0.0005
+Training - Epoch 31/250, Loss: 0.0050, Accuracy: 99.9107%
+Testing - Epoch 31/250, Loss: 0.3608, Accuracy: 89.1071%
+Time: 743.94 seconds
+learing_rate =  0.0005
+Training - Epoch 32/250, Loss: 0.0061, Accuracy: 99.8661%
+Testing - Epoch 32/250, Loss: 0.3470, Accuracy: 90.8929%
+Time: 768.02 seconds
+learing_rate =  0.0005
+Training - Epoch 33/250, Loss: 0.0088, Accuracy: 99.7768%
+Testing - Epoch 33/250, Loss: 0.3815, Accuracy: 90.3571%
+Time: 792.16 seconds
+learing_rate =  0.0005
+Training - Epoch 34/250, Loss: 0.0027, Accuracy: 100.0000%
+Testing - Epoch 34/250, Loss: 0.3148, Accuracy: 90.8929%
+Time: 816.62 seconds
+learing_rate =  0.0005
+Training - Epoch 35/250, Loss: 0.0186, Accuracy: 99.4196%
+Testing - Epoch 35/250, Loss: 0.4884, Accuracy: 87.8571%
+Time: 840.34 seconds
+learing_rate =  0.0005
+Training - Epoch 36/250, Loss: 0.0195, Accuracy: 99.2857%
+Testing - Epoch 36/250, Loss: 0.4368, Accuracy: 88.7500%
+Time: 864.00 seconds
+learing_rate =  0.0005
+Training - Epoch 37/250, Loss: 0.0606, Accuracy: 97.7232%
+Testing - Epoch 37/250, Loss: 0.6790, Accuracy: 84.4643%
+Time: 888.39 seconds
+learing_rate =  0.0005
+Training - Epoch 38/250, Loss: 0.0777, Accuracy: 97.6339%
+Testing - Epoch 38/250, Loss: 0.6097, Accuracy: 85.8929%
+Time: 912.59 seconds
+learing_rate =  0.0005
+Training - Epoch 39/250, Loss: 0.1481, Accuracy: 95.4018%
+Testing - Epoch 39/250, Loss: 1.7278, Accuracy: 71.9643%
+Time: 936.85 seconds
+learing_rate =  0.0005
+Training - Epoch 40/250, Loss: 0.1510, Accuracy: 95.4464%
+Testing - Epoch 40/250, Loss: 0.4947, Accuracy: 86.7857%
+Time: 961.46 seconds
+learing_rate =  0.0005
+Training - Epoch 41/250, Loss: 0.0582, Accuracy: 97.9464%
+Testing - Epoch 41/250, Loss: 0.4144, Accuracy: 90.0000%
+Time: 985.24 seconds
+learing_rate =  0.0005
+Training - Epoch 42/250, Loss: 0.0352, Accuracy: 98.8839%
+Testing - Epoch 42/250, Loss: 0.3169, Accuracy: 90.8929%
+Time: 1009.21 seconds
+learing_rate =  0.0005
+Training - Epoch 43/250, Loss: 0.0116, Accuracy: 99.7321%
+Testing - Epoch 43/250, Loss: 0.3283, Accuracy: 90.7143%
+Time: 1033.29 seconds
+learing_rate =  0.0005
+Training - Epoch 44/250, Loss: 0.0164, Accuracy: 99.3750%
+Testing - Epoch 44/250, Loss: 0.3514, Accuracy: 90.1786%
+Time: 1057.13 seconds
+learing_rate =  0.0005
+Training - Epoch 45/250, Loss: 0.0061, Accuracy: 99.7768%
+Testing - Epoch 45/250, Loss: 0.3326, Accuracy: 90.3571%
+Time: 1081.63 seconds
+learing_rate =  0.0005
+Training - Epoch 46/250, Loss: 0.0031, Accuracy: 100.0000%
+Testing - Epoch 46/250, Loss: 0.3180, Accuracy: 91.6071%
+Time: 1105.60 seconds
+learing_rate =  0.0005
+Training - Epoch 47/250, Loss: 0.0022, Accuracy: 100.0000%
+Testing - Epoch 47/250, Loss: 0.2932, Accuracy: 91.6071%
+Time: 1129.73 seconds
+learing_rate =  0.0005
+Training - Epoch 48/250, Loss: 0.0016, Accuracy: 100.0000%
+Testing - Epoch 48/250, Loss: 0.3044, Accuracy: 91.9643%
+Time: 1153.86 seconds
+learing_rate =  0.0005
+Training - Epoch 49/250, Loss: 0.0009, Accuracy: 100.0000%
+Testing - Epoch 49/250, Loss: 0.2981, Accuracy: 91.7857%
+Time: 1177.74 seconds
+learing_rate =  0.0005
+Training - Epoch 50/250, Loss: 0.0007, Accuracy: 100.0000%
+Testing - Epoch 50/250, Loss: 0.3188, Accuracy: 91.9643%
+Time: 1201.89 seconds
+learing_rate =  0.0005
+Training - Epoch 51/250, Loss: 0.0048, Accuracy: 99.8214%
+Testing - Epoch 51/250, Loss: 0.4562, Accuracy: 88.0357%
+Time: 1225.74 seconds
+learing_rate =  0.0005
+Training - Epoch 52/250, Loss: 0.0161, Accuracy: 99.3304%
+Testing - Epoch 52/250, Loss: 0.3742, Accuracy: 90.5357%
+Time: 1249.89 seconds
+learing_rate =  0.0005
+Training - Epoch 53/250, Loss: 0.0183, Accuracy: 99.5982%
+Testing - Epoch 53/250, Loss: 0.4444, Accuracy: 90.0000%
+Time: 1273.99 seconds
+learing_rate =  0.0005
+Training - Epoch 54/250, Loss: 0.0070, Accuracy: 99.8214%
+Testing - Epoch 54/250, Loss: 0.4127, Accuracy: 89.1071%
+Time: 1297.72 seconds
+learing_rate =  0.0005
+Training - Epoch 55/250, Loss: 0.0693, Accuracy: 98.1250%
+Testing - Epoch 55/250, Loss: 0.7438, Accuracy: 83.9286%
+Time: 1321.81 seconds
+learing_rate =  0.0005
+Training - Epoch 56/250, Loss: 0.0740, Accuracy: 97.2321%
+Testing - Epoch 56/250, Loss: 0.7000, Accuracy: 83.3929%
+Time: 1345.67 seconds
+learing_rate =  0.0005
+Training - Epoch 57/250, Loss: 0.0795, Accuracy: 97.5000%
+Testing - Epoch 57/250, Loss: 0.7006, Accuracy: 85.0000%
+Time: 1369.86 seconds
+learing_rate =  0.0005
+Training - Epoch 58/250, Loss: 0.0431, Accuracy: 98.5714%
+Testing - Epoch 58/250, Loss: 0.5032, Accuracy: 87.1429%
+Time: 1394.26 seconds
+learing_rate =  0.0005
+Training - Epoch 59/250, Loss: 0.0547, Accuracy: 98.1250%
+Testing - Epoch 59/250, Loss: 0.5199, Accuracy: 87.3214%
+Time: 1418.20 seconds
+learing_rate =  0.0005
+Training - Epoch 60/250, Loss: 0.0206, Accuracy: 99.1964%
+Testing - Epoch 60/250, Loss: 0.4674, Accuracy: 88.3929%
+Time: 1442.32 seconds
+learing_rate =  0.0005
+Training - Epoch 61/250, Loss: 0.0162, Accuracy: 99.5089%
+Testing - Epoch 61/250, Loss: 0.7224, Accuracy: 85.7143%
+Time: 1466.44 seconds
+learing_rate =  0.0005
+Training - Epoch 62/250, Loss: 0.0054, Accuracy: 99.9107%
+Testing - Epoch 62/250, Loss: 0.4003, Accuracy: 91.7857%
+Time: 1490.79 seconds
+learing_rate =  0.0005
+Training - Epoch 63/250, Loss: 0.0063, Accuracy: 99.7768%
+Testing - Epoch 63/250, Loss: 0.5219, Accuracy: 89.4643%
+Time: 1514.92 seconds
+learing_rate =  0.0005
+Training - Epoch 64/250, Loss: 0.0229, Accuracy: 99.2411%
+Testing - Epoch 64/250, Loss: 0.6019, Accuracy: 85.8929%
+Time: 1538.86 seconds
+learing_rate =  0.0005
+Training - Epoch 65/250, Loss: 0.0154, Accuracy: 99.5536%
+Testing - Epoch 65/250, Loss: 0.4777, Accuracy: 88.9286%
+Time: 1563.43 seconds
+learing_rate =  0.0005
+Training - Epoch 66/250, Loss: 0.0176, Accuracy: 99.3304%
+Testing - Epoch 66/250, Loss: 0.6587, Accuracy: 86.2500%
+Time: 1586.81 seconds
+learing_rate =  0.0005
+Training - Epoch 67/250, Loss: 0.0161, Accuracy: 99.4643%
+Testing - Epoch 67/250, Loss: 0.5876, Accuracy: 86.7857%
+Time: 1610.93 seconds
+learing_rate =  0.0005
+Training - Epoch 68/250, Loss: 0.0116, Accuracy: 99.5536%
+Testing - Epoch 68/250, Loss: 0.5478, Accuracy: 88.2143%
+Time: 1634.68 seconds
+learing_rate =  0.0005
+Training - Epoch 69/250, Loss: 0.0437, Accuracy: 99.1071%
+Testing - Epoch 69/250, Loss: 0.8537, Accuracy: 83.3929%
+Time: 1658.55 seconds
+learing_rate =  0.0005
+Training - Epoch 70/250, Loss: 0.0911, Accuracy: 96.7857%
+Testing - Epoch 70/250, Loss: 0.5802, Accuracy: 86.6071%
+Time: 1682.01 seconds
+learing_rate =  0.0005
+Training - Epoch 71/250, Loss: 0.0390, Accuracy: 98.5714%
+Testing - Epoch 71/250, Loss: 0.7175, Accuracy: 84.1071%
+Time: 1705.56 seconds
+learing_rate =  0.0005
+Training - Epoch 72/250, Loss: 0.0552, Accuracy: 98.2143%
+Testing - Epoch 72/250, Loss: 0.6926, Accuracy: 83.2143%
+Time: 1729.15 seconds
+learing_rate =  0.0005
+Training - Epoch 73/250, Loss: 0.0395, Accuracy: 98.5714%
+Testing - Epoch 73/250, Loss: 0.8047, Accuracy: 85.3571%
+Time: 1752.56 seconds
+learing_rate =  0.0005
+Training - Epoch 74/250, Loss: 0.0306, Accuracy: 99.1964%
+Testing - Epoch 74/250, Loss: 0.5060, Accuracy: 88.5714%
+Time: 1776.03 seconds
+learing_rate =  0.0005
+Training - Epoch 75/250, Loss: 0.0033, Accuracy: 99.9554%
+Testing - Epoch 75/250, Loss: 0.4356, Accuracy: 89.1071%
+Time: 1799.64 seconds
+learing_rate =  0.0005
+Training - Epoch 76/250, Loss: 0.0028, Accuracy: 99.9554%
+Testing - Epoch 76/250, Loss: 0.4197, Accuracy: 89.2857%
+Time: 1823.09 seconds
+learing_rate =  0.0005
+Training - Epoch 77/250, Loss: 0.0020, Accuracy: 99.9554%
+Testing - Epoch 77/250, Loss: 0.4808, Accuracy: 87.6786%
+Time: 1846.89 seconds
+learing_rate =  0.0005
+Training - Epoch 78/250, Loss: 0.0108, Accuracy: 99.5982%
+Testing - Epoch 78/250, Loss: 0.5217, Accuracy: 88.0357%
+Time: 1870.78 seconds
+learing_rate =  0.0005
+Training - Epoch 79/250, Loss: 0.0123, Accuracy: 99.7768%
+Testing - Epoch 79/250, Loss: 0.4996, Accuracy: 90.7143%
+Time: 1894.65 seconds
+learing_rate =  0.0005
+Training - Epoch 80/250, Loss: 0.0036, Accuracy: 99.9107%
+Testing - Epoch 80/250, Loss: 0.4174, Accuracy: 90.8929%
+Time: 1918.55 seconds
+learing_rate =  0.0005
+Training - Epoch 81/250, Loss: 0.0086, Accuracy: 99.7768%
+Testing - Epoch 81/250, Loss: 0.5809, Accuracy: 87.5000%
+Time: 1942.62 seconds
+learing_rate =  0.0005
+Training - Epoch 82/250, Loss: 0.0062, Accuracy: 99.8214%
+Testing - Epoch 82/250, Loss: 0.4775, Accuracy: 89.4643%
+Time: 1967.47 seconds
+learing_rate =  0.0005
+Training - Epoch 83/250, Loss: 0.0031, Accuracy: 99.9107%
+Testing - Epoch 83/250, Loss: 0.4251, Accuracy: 89.1071%
+Time: 1991.04 seconds
+learing_rate =  0.0005
+Training - Epoch 84/250, Loss: 0.0077, Accuracy: 99.6875%
+Testing - Epoch 84/250, Loss: 0.5985, Accuracy: 86.2500%
+Time: 2015.06 seconds
+learing_rate =  0.0005
+Training - Epoch 85/250, Loss: 0.0068, Accuracy: 99.6875%
+Testing - Epoch 85/250, Loss: 0.5012, Accuracy: 88.7500%
+Time: 2038.72 seconds
+learing_rate =  0.0005
+Training - Epoch 86/250, Loss: 0.0056, Accuracy: 99.7768%
+Testing - Epoch 86/250, Loss: 0.5185, Accuracy: 88.5714%
+Time: 2062.28 seconds
+learing_rate =  0.0005
+Training - Epoch 87/250, Loss: 0.0103, Accuracy: 99.7321%
+Testing - Epoch 87/250, Loss: 0.5539, Accuracy: 89.1071%
+Time: 2086.08 seconds
+learing_rate =  0.0005
+Training - Epoch 88/250, Loss: 0.0115, Accuracy: 99.6875%
+Testing - Epoch 88/250, Loss: 0.6633, Accuracy: 86.2500%
+Time: 2109.81 seconds
+learing_rate =  0.0005
+Training - Epoch 89/250, Loss: 0.0382, Accuracy: 98.5268%
+Testing - Epoch 89/250, Loss: 0.6980, Accuracy: 86.9643%
+Time: 2133.34 seconds
+learing_rate =  0.0005
+Training - Epoch 90/250, Loss: 0.0834, Accuracy: 97.6786%
+Testing - Epoch 90/250, Loss: 0.6900, Accuracy: 85.3571%
+Time: 2157.35 seconds
+learing_rate =  0.0005
+Training - Epoch 91/250, Loss: 0.0506, Accuracy: 98.3929%
+Testing - Epoch 91/250, Loss: 0.7428, Accuracy: 83.3929%
+Time: 2180.97 seconds
+learing_rate =  0.0005
+Training - Epoch 92/250, Loss: 0.0618, Accuracy: 98.1696%
+Testing - Epoch 92/250, Loss: 0.7930, Accuracy: 83.2143%
+Time: 2205.07 seconds
+learing_rate =  0.0005
+Training - Epoch 93/250, Loss: 0.0563, Accuracy: 98.2143%
+Testing - Epoch 93/250, Loss: 0.6275, Accuracy: 86.0714%
+Time: 2228.73 seconds
+learing_rate =  0.0005
+Training - Epoch 94/250, Loss: 0.0144, Accuracy: 99.7321%
+Testing - Epoch 94/250, Loss: 0.5390, Accuracy: 88.5714%
+Time: 2252.01 seconds
+learing_rate =  0.0005
+Training - Epoch 95/250, Loss: 0.0191, Accuracy: 99.1964%
+Testing - Epoch 95/250, Loss: 0.5333, Accuracy: 88.2143%
+Time: 2275.76 seconds
+learing_rate =  0.0005
+Training - Epoch 96/250, Loss: 0.0357, Accuracy: 99.1071%
+Testing - Epoch 96/250, Loss: 0.8654, Accuracy: 83.2143%
+Time: 2299.09 seconds
+learing_rate =  0.0005
+Training - Epoch 97/250, Loss: 0.0188, Accuracy: 99.5536%
+Testing - Epoch 97/250, Loss: 0.5762, Accuracy: 86.7857%
+Time: 2322.61 seconds
+learing_rate =  0.0005
+Training - Epoch 98/250, Loss: 0.0040, Accuracy: 99.9554%
+Testing - Epoch 98/250, Loss: 0.5106, Accuracy: 87.8571%
+Time: 2345.98 seconds
+learing_rate =  0.0005
+Training - Epoch 99/250, Loss: 0.0085, Accuracy: 99.6429%
+Testing - Epoch 99/250, Loss: 0.6786, Accuracy: 85.1786%
+Time: 2369.30 seconds
+learing_rate =  0.0005
+Training - Epoch 100/250, Loss: 0.0258, Accuracy: 99.3304%
+Testing - Epoch 100/250, Loss: 0.4629, Accuracy: 88.2143%
+Time: 2393.40 seconds
+learing_rate =  0.0005
+Training - Epoch 101/250, Loss: 0.0183, Accuracy: 99.5089%
+Testing - Epoch 101/250, Loss: 0.6334, Accuracy: 86.2500%
+Time: 2416.93 seconds
+learing_rate =  0.0005
+Training - Epoch 102/250, Loss: 0.0076, Accuracy: 99.7768%
+Testing - Epoch 102/250, Loss: 0.4828, Accuracy: 89.1071%
+Time: 2440.46 seconds
+learing_rate =  0.0005
+Training - Epoch 103/250, Loss: 0.0030, Accuracy: 99.9107%
+Testing - Epoch 103/250, Loss: 0.4831, Accuracy: 88.2143%
+Time: 2464.16 seconds
+learing_rate =  0.0005
+Training - Epoch 104/250, Loss: 0.0007, Accuracy: 100.0000%
+Testing - Epoch 104/250, Loss: 0.4235, Accuracy: 88.5714%
+Time: 2487.43 seconds
+learing_rate =  0.0005
+Training - Epoch 105/250, Loss: 0.0011, Accuracy: 100.0000%
+Testing - Epoch 105/250, Loss: 0.4214, Accuracy: 89.6429%
+Time: 2511.41 seconds
+learing_rate =  0.0005
+Training - Epoch 106/250, Loss: 0.0014, Accuracy: 100.0000%
+Testing - Epoch 106/250, Loss: 0.4544, Accuracy: 88.7500%
+Time: 2535.27 seconds
+learing_rate =  0.0005
+Training - Epoch 107/250, Loss: 0.0005, Accuracy: 100.0000%
+Testing - Epoch 107/250, Loss: 0.4665, Accuracy: 89.2857%
+Time: 2559.03 seconds
+learing_rate =  0.0005
+Training - Epoch 108/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 108/250, Loss: 0.4149, Accuracy: 90.0000%
+Time: 2582.40 seconds
+learing_rate =  0.0005
+Training - Epoch 109/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 109/250, Loss: 0.4290, Accuracy: 89.8214%
+Time: 2606.16 seconds
+learing_rate =  0.0005
+Training - Epoch 110/250, Loss: 0.0005, Accuracy: 100.0000%
+Testing - Epoch 110/250, Loss: 0.4341, Accuracy: 90.3571%
+Time: 2629.95 seconds
+learing_rate =  0.0005
+Training - Epoch 111/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 111/250, Loss: 0.4220, Accuracy: 90.3571%
+Time: 2653.53 seconds
+learing_rate =  0.0005
+Training - Epoch 112/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 112/250, Loss: 0.4389, Accuracy: 90.5357%
+Time: 2676.94 seconds
+learing_rate =  0.0005
+Training - Epoch 113/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 113/250, Loss: 0.4256, Accuracy: 90.5357%
+Time: 2700.48 seconds
+learing_rate =  0.0005
+Training - Epoch 114/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 114/250, Loss: 0.4190, Accuracy: 90.5357%
+Time: 2724.12 seconds
+learing_rate =  0.0005
+Training - Epoch 115/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 115/250, Loss: 0.4186, Accuracy: 89.8214%
+Time: 2748.22 seconds
+learing_rate =  0.0005
+Training - Epoch 116/250, Loss: 0.0008, Accuracy: 100.0000%
+Testing - Epoch 116/250, Loss: 0.4395, Accuracy: 89.8214%
+Time: 2771.84 seconds
+learing_rate =  0.0005
+Training - Epoch 117/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 117/250, Loss: 0.4243, Accuracy: 90.0000%
+Time: 2796.09 seconds
+learing_rate =  0.0005
+Training - Epoch 118/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 118/250, Loss: 0.4348, Accuracy: 90.1786%
+Time: 2820.08 seconds
+learing_rate =  0.0005
+Training - Epoch 119/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 119/250, Loss: 0.4254, Accuracy: 90.7143%
+Time: 2844.13 seconds
+learing_rate =  0.0005
+Training - Epoch 120/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 120/250, Loss: 0.4565, Accuracy: 89.6429%
+Time: 2868.93 seconds
+learing_rate =  0.0005
+Training - Epoch 121/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 121/250, Loss: 0.4209, Accuracy: 90.5357%
+Time: 2893.40 seconds
+learing_rate =  0.0005
+Training - Epoch 122/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 122/250, Loss: 0.4256, Accuracy: 91.0714%
+Time: 2917.77 seconds
+learing_rate =  0.0005
+Training - Epoch 123/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 123/250, Loss: 0.4172, Accuracy: 90.5357%
+Time: 2942.27 seconds
+learing_rate =  0.0005
+Training - Epoch 124/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 124/250, Loss: 0.4581, Accuracy: 89.8214%
+Time: 2966.63 seconds
+learing_rate =  0.0005
+Training - Epoch 125/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 125/250, Loss: 0.4405, Accuracy: 90.3571%
+Time: 2990.86 seconds
+learing_rate =  0.0005
+Training - Epoch 126/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 126/250, Loss: 0.4302, Accuracy: 90.8929%
+Time: 3014.24 seconds
+learing_rate =  0.0005
+Training - Epoch 127/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 127/250, Loss: 0.5331, Accuracy: 90.3571%
+Time: 3037.91 seconds
+learing_rate =  0.0005
+Training - Epoch 128/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 128/250, Loss: 0.5081, Accuracy: 89.1071%
+Time: 3061.32 seconds
+learing_rate =  0.0005
+Training - Epoch 129/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 129/250, Loss: 0.4799, Accuracy: 89.8214%
+Time: 3084.63 seconds
+learing_rate =  0.0005
+Training - Epoch 130/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 130/250, Loss: 0.4897, Accuracy: 89.6429%
+Time: 3108.97 seconds
+learing_rate =  0.0005
+Training - Epoch 131/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 131/250, Loss: 0.4592, Accuracy: 90.1786%
+Time: 3132.76 seconds
+learing_rate =  0.0005
+Training - Epoch 132/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 132/250, Loss: 0.4669, Accuracy: 90.1786%
+Time: 3156.90 seconds
+learing_rate =  0.0005
+Training - Epoch 133/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 133/250, Loss: 0.4836, Accuracy: 89.8214%
+Time: 3180.81 seconds
+learing_rate =  0.0005
+Training - Epoch 134/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 134/250, Loss: 0.4325, Accuracy: 89.6429%
+Time: 3204.45 seconds
+learing_rate =  0.0005
+Training - Epoch 135/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 135/250, Loss: 0.4368, Accuracy: 90.5357%
+Time: 3228.25 seconds
+learing_rate =  0.0005
+Training - Epoch 136/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 136/250, Loss: 0.4457, Accuracy: 90.1786%
+Time: 3252.74 seconds
+learing_rate =  0.0005
+Training - Epoch 137/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 137/250, Loss: 0.4333, Accuracy: 90.1786%
+Time: 3278.16 seconds
+learing_rate =  0.0005
+Training - Epoch 138/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 138/250, Loss: 0.4436, Accuracy: 90.7143%
+Time: 3302.32 seconds
+learing_rate =  0.0005
+Training - Epoch 139/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 139/250, Loss: 0.4338, Accuracy: 89.1071%
+Time: 3326.07 seconds
+learing_rate =  0.0005
+Training - Epoch 140/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 140/250, Loss: 0.4478, Accuracy: 90.0000%
+Time: 3350.48 seconds
+learing_rate =  0.0005
+Training - Epoch 141/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 141/250, Loss: 0.4346, Accuracy: 90.1786%
+Time: 3373.94 seconds
+learing_rate =  0.0005
+Training - Epoch 142/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 142/250, Loss: 0.4351, Accuracy: 90.5357%
+Time: 3397.26 seconds
+learing_rate =  0.0005
+Training - Epoch 143/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 143/250, Loss: 0.4363, Accuracy: 91.0714%
+Time: 3421.49 seconds
+learing_rate =  0.0005
+Training - Epoch 144/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 144/250, Loss: 0.4406, Accuracy: 89.8214%
+Time: 3445.07 seconds
+learing_rate =  0.0005
+Training - Epoch 145/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 145/250, Loss: 0.4419, Accuracy: 90.3571%
+Time: 3468.79 seconds
+learing_rate =  0.0005
+Training - Epoch 146/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 146/250, Loss: 0.4578, Accuracy: 90.8929%
+Time: 3491.95 seconds
+learing_rate =  0.0005
+Training - Epoch 147/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 147/250, Loss: 0.4366, Accuracy: 89.8214%
+Time: 3515.34 seconds
+learing_rate =  0.0005
+Training - Epoch 148/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 148/250, Loss: 0.4573, Accuracy: 90.8929%
+Time: 3539.18 seconds
+learing_rate =  0.0005
+Training - Epoch 149/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 149/250, Loss: 0.4702, Accuracy: 89.6429%
+Time: 3562.49 seconds
+learing_rate =  0.0005
+Training - Epoch 150/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 150/250, Loss: 0.4556, Accuracy: 90.0000%
+Time: 3586.46 seconds
+learing_rate =  0.0005
+Training - Epoch 151/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 151/250, Loss: 0.4432, Accuracy: 89.6429%
+Time: 3609.98 seconds
+learing_rate =  0.0005
+Training - Epoch 152/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 152/250, Loss: 0.4962, Accuracy: 88.5714%
+Time: 3633.37 seconds
+learing_rate =  0.0005
+Training - Epoch 153/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 153/250, Loss: 0.4739, Accuracy: 89.8214%
+Time: 3657.18 seconds
+learing_rate =  0.0005
+Training - Epoch 154/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 154/250, Loss: 0.4652, Accuracy: 89.4643%
+Time: 3680.88 seconds
+learing_rate =  0.0005
+Training - Epoch 155/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 155/250, Loss: 0.4606, Accuracy: 90.0000%
+Time: 3704.38 seconds
+learing_rate =  0.0005
+Training - Epoch 156/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 156/250, Loss: 0.4747, Accuracy: 89.4643%
+Time: 3727.97 seconds
+learing_rate =  0.0005
+Training - Epoch 157/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 157/250, Loss: 0.4523, Accuracy: 89.8214%
+Time: 3751.39 seconds
+learing_rate =  0.0005
+Training - Epoch 158/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 158/250, Loss: 0.4674, Accuracy: 90.3571%
+Time: 3775.74 seconds
+learing_rate =  0.0005
+Training - Epoch 159/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 159/250, Loss: 0.4557, Accuracy: 90.7143%
+Time: 3799.20 seconds
+learing_rate =  0.0005
+Training - Epoch 160/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 160/250, Loss: 0.4583, Accuracy: 90.0000%
+Time: 3822.83 seconds
+learing_rate =  0.0005
+Training - Epoch 161/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 161/250, Loss: 0.4738, Accuracy: 90.3571%
+Time: 3846.21 seconds
+learing_rate =  0.0005
+Training - Epoch 162/250, Loss: 0.0000, Accuracy: 100.0000%
+Testing - Epoch 162/250, Loss: 0.4627, Accuracy: 90.7143%
+Time: 3869.97 seconds
+learing_rate =  0.0005
+Training - Epoch 163/250, Loss: 0.1610, Accuracy: 96.4286%
+Testing - Epoch 163/250, Loss: 2.1068, Accuracy: 58.0357%
+Time: 3894.41 seconds
+learing_rate =  0.0005
+Training - Epoch 164/250, Loss: 0.5342, Accuracy: 86.0714%
+Testing - Epoch 164/250, Loss: 0.5968, Accuracy: 82.5000%
+Time: 3917.76 seconds
+learing_rate =  0.0005
+Training - Epoch 165/250, Loss: 0.0917, Accuracy: 97.2768%
+Testing - Epoch 165/250, Loss: 0.3814, Accuracy: 89.1071%
+Time: 3941.48 seconds
+learing_rate =  0.0005
+Training - Epoch 166/250, Loss: 0.0345, Accuracy: 99.0625%
+Testing - Epoch 166/250, Loss: 0.3636, Accuracy: 90.7143%
+Time: 3965.00 seconds
+learing_rate =  0.0005
+Training - Epoch 167/250, Loss: 0.0138, Accuracy: 99.5536%
+Testing - Epoch 167/250, Loss: 0.3810, Accuracy: 89.6429%
+Time: 3988.38 seconds
+learing_rate =  0.0005
+Training - Epoch 168/250, Loss: 0.0069, Accuracy: 99.8661%
+Testing - Epoch 168/250, Loss: 0.3641, Accuracy: 89.6429%
+Time: 4012.48 seconds
+learing_rate =  0.0005
+Training - Epoch 169/250, Loss: 0.0044, Accuracy: 99.9554%
+Testing - Epoch 169/250, Loss: 0.4116, Accuracy: 89.4643%
+Time: 4035.87 seconds
+learing_rate =  0.0005
+Training - Epoch 170/250, Loss: 0.0042, Accuracy: 99.9554%
+Testing - Epoch 170/250, Loss: 0.4904, Accuracy: 89.4643%
+Time: 4059.54 seconds
+learing_rate =  0.0005
+Training - Epoch 171/250, Loss: 0.0048, Accuracy: 99.8661%
+Testing - Epoch 171/250, Loss: 0.4351, Accuracy: 89.8214%
+Time: 4082.84 seconds
+learing_rate =  0.0005
+Training - Epoch 172/250, Loss: 0.0026, Accuracy: 99.9554%
+Testing - Epoch 172/250, Loss: 0.3752, Accuracy: 91.0714%
+Time: 4106.22 seconds
+learing_rate =  0.0005
+Training - Epoch 173/250, Loss: 0.0068, Accuracy: 99.8214%
+Testing - Epoch 173/250, Loss: 0.3679, Accuracy: 90.8929%
+Time: 4129.83 seconds
+learing_rate =  0.0005
+Training - Epoch 174/250, Loss: 0.0031, Accuracy: 100.0000%
+Testing - Epoch 174/250, Loss: 0.3772, Accuracy: 91.2500%
+Time: 4153.25 seconds
+learing_rate =  0.0005
+Training - Epoch 175/250, Loss: 0.0012, Accuracy: 100.0000%
+Testing - Epoch 175/250, Loss: 0.3700, Accuracy: 91.4286%
+Time: 4176.37 seconds
+learing_rate =  0.0005
+Training - Epoch 176/250, Loss: 0.0024, Accuracy: 99.9554%
+Testing - Epoch 176/250, Loss: 0.4089, Accuracy: 90.7143%
+Time: 4200.10 seconds
+learing_rate =  0.0005
+Training - Epoch 177/250, Loss: 0.0012, Accuracy: 100.0000%
+Testing - Epoch 177/250, Loss: 0.3732, Accuracy: 91.2500%
+Time: 4223.52 seconds
+learing_rate =  0.0005
+Training - Epoch 178/250, Loss: 0.0010, Accuracy: 100.0000%
+Testing - Epoch 178/250, Loss: 0.3787, Accuracy: 91.9643%
+Time: 4247.08 seconds
+learing_rate =  0.0005
+Training - Epoch 179/250, Loss: 0.0025, Accuracy: 99.8661%
+Testing - Epoch 179/250, Loss: 0.3876, Accuracy: 90.8929%
+Time: 4270.34 seconds
+learing_rate =  0.0005
+Training - Epoch 180/250, Loss: 0.0010, Accuracy: 100.0000%
+Testing - Epoch 180/250, Loss: 0.3939, Accuracy: 91.6071%
+Time: 4293.80 seconds
+learing_rate =  0.0005
+Training - Epoch 181/250, Loss: 0.0006, Accuracy: 100.0000%
+Testing - Epoch 181/250, Loss: 0.3813, Accuracy: 92.1429%
+Time: 4317.60 seconds
+learing_rate =  0.0005
+Training - Epoch 182/250, Loss: 0.0007, Accuracy: 100.0000%
+Testing - Epoch 182/250, Loss: 0.3794, Accuracy: 91.2500%
+Time: 4340.96 seconds
+learing_rate =  0.0005
+Training - Epoch 183/250, Loss: 0.0006, Accuracy: 100.0000%
+Testing - Epoch 183/250, Loss: 0.3911, Accuracy: 90.8929%
+Time: 4364.26 seconds
+learing_rate =  0.0005
+Training - Epoch 184/250, Loss: 0.0005, Accuracy: 100.0000%
+Testing - Epoch 184/250, Loss: 0.4104, Accuracy: 90.8929%
+Time: 4387.61 seconds
+learing_rate =  0.0005
+Training - Epoch 185/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 185/250, Loss: 0.3965, Accuracy: 91.6071%
+Time: 4411.23 seconds
+learing_rate =  0.0005
+Training - Epoch 186/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 186/250, Loss: 0.4023, Accuracy: 91.6071%
+Time: 4435.30 seconds
+learing_rate =  0.0005
+Training - Epoch 187/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 187/250, Loss: 0.3975, Accuracy: 91.6071%
+Time: 4458.47 seconds
+learing_rate =  0.0005
+Training - Epoch 188/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 188/250, Loss: 0.3833, Accuracy: 91.7857%
+Time: 4481.98 seconds
+learing_rate =  0.0005
+Training - Epoch 189/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 189/250, Loss: 0.3829, Accuracy: 92.5000%
+Time: 4505.85 seconds
+learing_rate =  0.0005
+Training - Epoch 190/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 190/250, Loss: 0.4098, Accuracy: 91.9643%
+Time: 4529.90 seconds
+learing_rate =  0.0005
+Training - Epoch 191/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 191/250, Loss: 0.4121, Accuracy: 91.7857%
+Time: 4553.80 seconds
+learing_rate =  0.0005
+Training - Epoch 192/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 192/250, Loss: 0.4169, Accuracy: 91.2500%
+Time: 4577.18 seconds
+learing_rate =  0.0005
+Training - Epoch 193/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 193/250, Loss: 0.4130, Accuracy: 91.7857%
+Time: 4601.10 seconds
+learing_rate =  0.0005
+Training - Epoch 194/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 194/250, Loss: 0.3881, Accuracy: 92.1429%
+Time: 4625.06 seconds
+learing_rate =  0.0005
+Training - Epoch 195/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 195/250, Loss: 0.3954, Accuracy: 91.9643%
+Time: 4648.53 seconds
+learing_rate =  0.0005
+Training - Epoch 196/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 196/250, Loss: 0.4006, Accuracy: 91.6071%
+Time: 4672.86 seconds
+learing_rate =  0.0005
+Training - Epoch 197/250, Loss: 0.0007, Accuracy: 99.9554%
+Testing - Epoch 197/250, Loss: 0.3823, Accuracy: 91.0714%
+Time: 4696.75 seconds
+learing_rate =  0.0005
+Training - Epoch 198/250, Loss: 0.0580, Accuracy: 98.2589%
+Testing - Epoch 198/250, Loss: 1.5473, Accuracy: 76.7857%
+Time: 4720.61 seconds
+learing_rate =  0.0005
+Training - Epoch 199/250, Loss: 0.1423, Accuracy: 96.1607%
+Testing - Epoch 199/250, Loss: 1.4440, Accuracy: 76.7857%
+Time: 4744.47 seconds
+learing_rate =  0.0005
+Training - Epoch 200/250, Loss: 0.0935, Accuracy: 96.6964%
+Testing - Epoch 200/250, Loss: 0.6804, Accuracy: 82.5000%
+Time: 4768.46 seconds
+learing_rate =  0.0005
+Training - Epoch 201/250, Loss: 0.0305, Accuracy: 99.1071%
+Testing - Epoch 201/250, Loss: 0.5853, Accuracy: 85.7143%
+Time: 4793.10 seconds
+learing_rate =  0.0005
+Training - Epoch 202/250, Loss: 0.0251, Accuracy: 99.0179%
+Testing - Epoch 202/250, Loss: 0.6127, Accuracy: 86.7857%
+Time: 4817.27 seconds
+learing_rate =  0.0005
+Training - Epoch 203/250, Loss: 0.0189, Accuracy: 99.4643%
+Testing - Epoch 203/250, Loss: 0.4935, Accuracy: 88.9286%
+Time: 4841.56 seconds
+learing_rate =  0.0005
+Training - Epoch 204/250, Loss: 0.0085, Accuracy: 99.7321%
+Testing - Epoch 204/250, Loss: 0.5034, Accuracy: 87.5000%
+Time: 4866.32 seconds
+learing_rate =  0.0005
+Training - Epoch 205/250, Loss: 0.0144, Accuracy: 99.5982%
+Testing - Epoch 205/250, Loss: 0.4776, Accuracy: 88.2143%
+Time: 4890.81 seconds
+learing_rate =  0.0005
+Training - Epoch 206/250, Loss: 0.0065, Accuracy: 99.7321%
+Testing - Epoch 206/250, Loss: 0.4778, Accuracy: 87.8571%
+Time: 4915.02 seconds
+learing_rate =  0.0005
+Training - Epoch 207/250, Loss: 0.0048, Accuracy: 99.9107%
+Testing - Epoch 207/250, Loss: 0.4285, Accuracy: 88.5714%
+Time: 4939.19 seconds
+learing_rate =  0.0005
+Training - Epoch 208/250, Loss: 0.0020, Accuracy: 99.9554%
+Testing - Epoch 208/250, Loss: 0.4327, Accuracy: 89.2857%
+Time: 4963.98 seconds
+learing_rate =  0.0005
+Training - Epoch 209/250, Loss: 0.0045, Accuracy: 99.9107%
+Testing - Epoch 209/250, Loss: 0.5744, Accuracy: 85.7143%
+Time: 4987.94 seconds
+learing_rate =  0.0005
+Training - Epoch 210/250, Loss: 0.0025, Accuracy: 99.9107%
+Testing - Epoch 210/250, Loss: 0.5317, Accuracy: 88.7500%
+Time: 5011.55 seconds
+learing_rate =  0.0005
+Training - Epoch 211/250, Loss: 0.0011, Accuracy: 100.0000%
+Testing - Epoch 211/250, Loss: 0.4626, Accuracy: 88.7500%
+Time: 5035.65 seconds
+learing_rate =  0.0005
+Training - Epoch 212/250, Loss: 0.0007, Accuracy: 100.0000%
+Testing - Epoch 212/250, Loss: 0.5102, Accuracy: 88.9286%
+Time: 5059.38 seconds
+learing_rate =  0.0005
+Training - Epoch 213/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 213/250, Loss: 0.4576, Accuracy: 89.4643%
+Time: 5083.21 seconds
+learing_rate =  0.0005
+Training - Epoch 214/250, Loss: 0.0012, Accuracy: 99.9554%
+Testing - Epoch 214/250, Loss: 0.4662, Accuracy: 89.4643%
+Time: 5107.25 seconds
+learing_rate =  0.0005
+Training - Epoch 215/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 215/250, Loss: 0.4429, Accuracy: 89.6429%
+Time: 5130.93 seconds
+learing_rate =  0.0005
+Training - Epoch 216/250, Loss: 0.0005, Accuracy: 100.0000%
+Testing - Epoch 216/250, Loss: 0.4506, Accuracy: 89.2857%
+Time: 5155.24 seconds
+learing_rate =  0.0005
+Training - Epoch 217/250, Loss: 0.0006, Accuracy: 100.0000%
+Testing - Epoch 217/250, Loss: 0.4722, Accuracy: 89.4643%
+Time: 5178.94 seconds
+learing_rate =  0.0005
+Training - Epoch 218/250, Loss: 0.0007, Accuracy: 99.9554%
+Testing - Epoch 218/250, Loss: 0.4529, Accuracy: 89.6429%
+Time: 5203.23 seconds
+learing_rate =  0.0005
+Training - Epoch 219/250, Loss: 0.0050, Accuracy: 99.8214%
+Testing - Epoch 219/250, Loss: 0.5275, Accuracy: 87.5000%
+Time: 5227.12 seconds
+learing_rate =  0.0005
+Training - Epoch 220/250, Loss: 0.0029, Accuracy: 99.9107%
+Testing - Epoch 220/250, Loss: 0.5144, Accuracy: 88.0357%
+Time: 5251.17 seconds
+learing_rate =  0.0005
+Training - Epoch 221/250, Loss: 0.0032, Accuracy: 99.8214%
+Testing - Epoch 221/250, Loss: 0.5042, Accuracy: 88.2143%
+Time: 5275.30 seconds
+learing_rate =  0.0005
+Training - Epoch 222/250, Loss: 0.0030, Accuracy: 99.9107%
+Testing - Epoch 222/250, Loss: 0.5317, Accuracy: 88.9286%
+Time: 5299.30 seconds
+learing_rate =  0.0005
+Training - Epoch 223/250, Loss: 0.0135, Accuracy: 99.5089%
+Testing - Epoch 223/250, Loss: 0.7032, Accuracy: 85.5357%
+Time: 5323.24 seconds
+learing_rate =  0.0005
+Training - Epoch 224/250, Loss: 0.0712, Accuracy: 98.0357%
+Testing - Epoch 224/250, Loss: 0.8844, Accuracy: 83.2143%
+Time: 5346.83 seconds
+learing_rate =  0.0005
+Training - Epoch 225/250, Loss: 0.1000, Accuracy: 97.0089%
+Testing - Epoch 225/250, Loss: 0.8091, Accuracy: 83.5714%
+Time: 5370.32 seconds
+learing_rate =  0.0005
+Training - Epoch 226/250, Loss: 0.0477, Accuracy: 98.8393%
+Testing - Epoch 226/250, Loss: 0.6354, Accuracy: 84.1071%
+Time: 5394.31 seconds
+learing_rate =  0.0005
+Training - Epoch 227/250, Loss: 0.0081, Accuracy: 99.8661%
+Testing - Epoch 227/250, Loss: 0.5033, Accuracy: 86.6071%
+Time: 5417.69 seconds
+learing_rate =  0.0005
+Training - Epoch 228/250, Loss: 0.0074, Accuracy: 99.7768%
+Testing - Epoch 228/250, Loss: 0.5585, Accuracy: 87.5000%
+Time: 5441.67 seconds
+learing_rate =  0.0005
+Training - Epoch 229/250, Loss: 0.0158, Accuracy: 99.5536%
+Testing - Epoch 229/250, Loss: 0.6184, Accuracy: 87.8571%
+Time: 5465.69 seconds
+learing_rate =  0.0005
+Training - Epoch 230/250, Loss: 0.0096, Accuracy: 99.7321%
+Testing - Epoch 230/250, Loss: 0.4154, Accuracy: 89.6429%
+Time: 5488.88 seconds
+learing_rate =  0.0005
+Training - Epoch 231/250, Loss: 0.0013, Accuracy: 100.0000%
+Testing - Epoch 231/250, Loss: 0.4501, Accuracy: 90.5357%
+Time: 5512.39 seconds
+learing_rate =  0.0005
+Training - Epoch 232/250, Loss: 0.0009, Accuracy: 100.0000%
+Testing - Epoch 232/250, Loss: 0.4422, Accuracy: 90.8929%
+Time: 5535.79 seconds
+learing_rate =  0.0005
+Training - Epoch 233/250, Loss: 0.0015, Accuracy: 99.9554%
+Testing - Epoch 233/250, Loss: 0.4425, Accuracy: 89.6429%
+Time: 5559.69 seconds
+learing_rate =  0.0005
+Training - Epoch 234/250, Loss: 0.0008, Accuracy: 100.0000%
+Testing - Epoch 234/250, Loss: 0.4153, Accuracy: 90.0000%
+Time: 5583.37 seconds
+learing_rate =  0.0005
+Training - Epoch 235/250, Loss: 0.0026, Accuracy: 99.9107%
+Testing - Epoch 235/250, Loss: 0.4672, Accuracy: 89.8214%
+Time: 5606.64 seconds
+learing_rate =  0.0005
+Training - Epoch 236/250, Loss: 0.0008, Accuracy: 100.0000%
+Testing - Epoch 236/250, Loss: 0.4636, Accuracy: 90.0000%
+Time: 5630.15 seconds
+learing_rate =  0.0005
+Training - Epoch 237/250, Loss: 0.0005, Accuracy: 100.0000%
+Testing - Epoch 237/250, Loss: 0.4529, Accuracy: 90.0000%
+Time: 5653.29 seconds
+learing_rate =  0.0005
+Training - Epoch 238/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 238/250, Loss: 0.4600, Accuracy: 89.2857%
+Time: 5676.78 seconds
+learing_rate =  0.0005
+Training - Epoch 239/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 239/250, Loss: 0.4540, Accuracy: 90.0000%
+Time: 5700.52 seconds
+learing_rate =  0.0005
+Training - Epoch 240/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 240/250, Loss: 0.4424, Accuracy: 90.0000%
+Time: 5724.38 seconds
+learing_rate =  0.0005
+Training - Epoch 241/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 241/250, Loss: 0.4447, Accuracy: 89.4643%
+Time: 5748.21 seconds
+learing_rate =  0.0005
+Training - Epoch 242/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 242/250, Loss: 0.4693, Accuracy: 89.2857%
+Time: 5771.48 seconds
+learing_rate =  0.0005
+Training - Epoch 243/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 243/250, Loss: 0.4564, Accuracy: 89.6429%
+Time: 5795.13 seconds
+learing_rate =  0.0005
+Training - Epoch 244/250, Loss: 0.0003, Accuracy: 100.0000%
+Testing - Epoch 244/250, Loss: 0.4536, Accuracy: 89.4643%
+Time: 5818.74 seconds
+learing_rate =  0.0005
+Training - Epoch 245/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 245/250, Loss: 0.4713, Accuracy: 90.0000%
+Time: 5841.91 seconds
+learing_rate =  0.0005
+Training - Epoch 246/250, Loss: 0.0004, Accuracy: 100.0000%
+Testing - Epoch 246/250, Loss: 0.4459, Accuracy: 90.0000%
+Time: 5865.89 seconds
+learing_rate =  0.0005
+Training - Epoch 247/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 247/250, Loss: 0.4671, Accuracy: 89.2857%
+Time: 5889.05 seconds
+learing_rate =  0.0005
+Training - Epoch 248/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 248/250, Loss: 0.4742, Accuracy: 90.3571%
+Time: 5912.72 seconds
+learing_rate =  0.0005
+Training - Epoch 249/250, Loss: 0.0002, Accuracy: 100.0000%
+Testing - Epoch 249/250, Loss: 0.4454, Accuracy: 90.1786%
+Time: 5936.63 seconds
+learing_rate =  0.0005
+Training - Epoch 250/250, Loss: 0.0001, Accuracy: 100.0000%
+Testing - Epoch 250/250, Loss: 0.4556, Accuracy: 90.0000%
+Time: 5960.08 seconds
+Training completed.
