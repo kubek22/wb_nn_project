@@ -1,6 +1,6 @@
 from RSSCN7_dataLoader import RSSCN7_DataLoader
 from torchvision.models import resnet18
-from ..Resnet18.task.model import ResNet18
+# from ..Resnet18.task.model import ResNet18
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 import torch.nn as nn
@@ -144,7 +144,6 @@ def evaluate_model(model, test_loader, criterion):
 
 
 train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs, learning_rate)
-
 
 
 

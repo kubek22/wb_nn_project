@@ -5,6 +5,12 @@ from torchvision import datasets
 from torch.utils.data import DataLoader, random_split
 import torch.nn as nn
 import util
+import random
+import time
+
+time0 = time.time()
+
+random.seed(10)
 
 train_acc = []
 test_acc = []
@@ -37,13 +43,14 @@ class RCCN7DataLoader:
     def get_test_dataloader(self):
         return DataLoader(self.test_dataset, batch_size=self.batch_size, shuffle=False)
 
-data_dir = '../../../data/RSSCN7-master'
+data_dir = '/Users/katebokhan/Desktop/wb_nn_project/data/RSSCN7'
 batch_size = 32
 shuffle = True
+learning_rate = 0.001
 
 data_loader = RCCN7DataLoader(data_dir=data_dir, batch_size=batch_size, shuffle=shuffle)
 
-resnet18 = models.resnet18(pretrained=True)
+resnet18 = models.resnet18(weights='ResNet18_Weights.DEFAULT')
 
 #freeze all the weights
 for param in resnet18.parameters():
@@ -57,12 +64,12 @@ device = util.get_device()
 resnet18 = resnet18.to(device)
 
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(resnet18.parameters(), lr=0.002, momentum=0.9)
+optimizer = torch.optim.Adam(resnet18.parameters(), lr=learning_rate)
 
 #most optimal
-epochs = 100
+epochs = 250
 
-def train_model(model, criterion, optimizer, train_loader, test_loader, num_epochs=epochs):
+def train_model(model, criterion, optimizer, train_loader, test_loader, num_epochs, learning_rate):
     for epoch in range(num_epochs):
         model.train()
         running_loss = 0.0
@@ -87,10 +94,16 @@ def train_model(model, criterion, optimizer, train_loader, test_loader, num_epoc
         epoch_loss = running_loss / total_samples
         epoch_accuracy = correct_predictions / total_samples * 100
 
+        if epoch_accuracy >= 93:
+            learning_rate = 0.0005
+
+        print("learing_rate = ", learning_rate)
+
         print(f'Training - Epoch {epoch+1}/{num_epochs}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.4f}%')
 
         test_loss, test_accuracy = evaluate_model(model, criterion, test_loader)
         print(f'Testing - Epoch {epoch+1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}%')
+        print(f'Time: {time.time() - time0:.2f} seconds')
 
         train_acc.append(epoch_accuracy)
         test_acc.append(test_accuracy)
@@ -125,6 +138,6 @@ def evaluate_model(model, criterion, test_loader):
 train_loader = data_loader.get_train_dataloader()
 test_loader = data_loader.get_test_dataloader()
 
-train_model(resnet18, criterion, optimizer, train_loader, test_loader)
+train_model(resnet18, criterion, optimizer, train_loader, test_loader, epochs, learning_rate)
 
 torch.save(resnet18.state_dict(), 'transfer_learning_resnet18.pth')
