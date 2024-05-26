@@ -8,6 +8,14 @@ import torch.optim as optim
 import time
 import random
 
+acc_train = []
+acc_test = []
+loss_train =[]
+loss_test = []
+time_epoch = []
+cur_lambda = []
+cur_learning_rate = []
+
 random.seed(42)
 
 time0 = time.time()
@@ -15,11 +23,11 @@ time0 = time.time()
 data_dir = '/Users/katebokhan/Desktop/wb_nn_project/data/RSSCN7'
 batch_size = 32
 learning_rate = 0.001
-num_epochs = 250
+num_epochs = 2
 lambda_beginning = 0.1
 lambda_end = 1
 
-rsscn7_data_loader = RSSCN7_DataLoader(data_dir, batch_size=batch_size)
+rsscn7_data_loader = RSSCN7_DataLoader(data_dir, batch_size=batch_size, shuffle=True)
 train_loader = rsscn7_data_loader.get_train_dataloader()
 test_loader = rsscn7_data_loader.get_test_dataloader()
 
@@ -32,26 +40,23 @@ model.fc = nn.Linear(num_filters, 7)
 # pretrained_model_path = "/kaggle/input/resnet18-pretrained-on-dtd/pytorch/version1/1/resnet18_trained_on_DTD_from_80_to_90.pth"
 # pretrained_resnet18 = ResNet18()
 # pretrained_resnet18.load_state_dict(torch.load(pretrained_model_path, map_location=torch.device(device)))
-
 # model = pretrained_resnet18.to(device)
-
 # model.fc = nn.Linear(47, 7)
 
 criterion = nn.CrossEntropyLoss()
 opitmizer = optim.Adam(model.parameters(), lr=learning_rate)
+my_device = torch.device("cuda" if torch.cuda.is_available() else "mps")
 
 step = 0.03
 
 def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate):
-    device = torch.device('mps')
+    device = my_device
     model.to(device)
     counter = 0
 
     lambda_current = lambda_beginning
 
     for epoch in range(num_epochs):
-        start_time = time.time()
-
         model.train()
         total_loss = 0.0
         correct = 0
@@ -100,19 +105,29 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         if train_accuracy == 1:
             learning_rate = 0.0008
 
+        cur_time_ = time.time() - time0
+
         print("learing_rate = ", learning_rate)
 
         print(
-            f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}, Images: {num_images}, Lambda: {lambda_current:.2f}, Time: {time.time() - time0:.2f} seconds')
+            f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}, Images: {num_images}, Lambda: {lambda_current:.2f}, Time: {cur_time_:.2f} seconds')
 
         if train_accuracy > 0.8:
             if lambda_current < 0.8:
                 lambda_current += step
+                if lambda_current>1:
+                    lambda_current = 1
             else:
                 counter = counter + 1
                 if counter % 3 == 0:
                     lambda_current += step
                     counter = 0
+
+        acc_train.append(train_accuracy)
+        loss_train.append(train_loss)
+        time_epoch.append(cur_time_)
+        cur_lambda.append(lambda_current)
+        cur_learning_rate.append(learning_rate)
 
         evaluate_model(model, test_loader, criterion)
 
@@ -142,8 +157,27 @@ def evaluate_model(model, test_loader, criterion):
 
     print(f'Test Loss: {test_loss:.4f}, Test Accuracy: {test_accuracy:.4f}')
 
+    acc_test.append(test_accuracy)
+    loss_test.append(test_loss)
+
 
 train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs, learning_rate)
+print("Accuracy train:")
+print(acc_train)
+print("Accuracy test:")
+print(acc_test)
+print("Loss train:")
+print(loss_train)
+print("Loss test:")
+print(loss_test)
+print("Time epoch:")
+print(time_epoch)
+print("Learning rate:")
+print(cur_learning_rate)
+print("Lambdas:")
+print(cur_lambda)
+
+
 
 
 
