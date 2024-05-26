@@ -6,9 +6,12 @@ from torch.utils.data import DataLoader, TensorDataset
 import torch.nn as nn
 import torch.optim as optim
 import time
+import numpy as np
 import random
+from custom_metric import k_nearest_metric, get_labels
 
 random.seed(42)
+device = torch.device("cuda" if torch.cuda.is_available() else "mps")
 
 time0 = time.time()
 
@@ -24,8 +27,7 @@ train_loader = rsscn7_data_loader.get_train_dataloader()
 test_loader = rsscn7_data_loader.get_test_dataloader()
 
 model = resnet18(weights='ResNet18_Weights.DEFAULT')
-num_filters = model.fc.in_features
-model.fc = nn.Linear(num_filters, 7)
+model.fc = nn.Linear(model.fc.in_features, 7)
 
 ######### In case of model pretrained on DTD: uploading the weights #################################################
 
@@ -42,16 +44,27 @@ opitmizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 step = 0.03
 
-def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate):
-    device = torch.device('mps')
+acc_train = []
+loss_train = []
+knn_metric_train = []
+acc_test = []
+loss_test = []
+knn_metric_test = []
+
+def get_labels2(data_loader):
+    labels = []
+    for _, target in data_loader:
+        labels.extend(target.cpu().numpy())
+    labels_array = np.array(labels)
+    return labels_array
+
+def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate, device):
     model.to(device)
     counter = 0
 
     lambda_current = lambda_beginning
 
     for epoch in range(num_epochs):
-        start_time = time.time()
-
         model.train()
         total_loss = 0.0
         correct = 0
@@ -74,7 +87,7 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
             easy_enough_inputs = torch.cat([x[0] for x in easy_enough_samples])
             easy_enough_labels = torch.cat([x[1] for x in easy_enough_samples])
             easy_enough_dataset = TensorDataset(easy_enough_inputs, easy_enough_labels)
-            easy_enough_loader = DataLoader(easy_enough_dataset, batch_size=batch_size, shuffle=True)
+            easy_enough_loader = DataLoader(easy_enough_dataset, batch_size=batch_size, shuffle=False)
         else:
             easy_enough_loader = train_loader
 
@@ -97,13 +110,21 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         train_accuracy = correct / total
         num_images = len(easy_enough_loader.dataset)
 
+        knn_metric = np.mean(k_nearest_metric(5, model, easy_enough_loader, device, get_labels2(easy_enough_loader)))
+
+        acc_train.append(train_accuracy)
+        loss_train.append(train_loss)
+        knn_metric_train.append(knn_metric)
+
         if train_accuracy == 1:
             learning_rate = 0.0008
 
-        print("learing_rate = ", learning_rate)
+        print("learning_rate = ", learning_rate)
 
         print(
             f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}, Images: {num_images}, Lambda: {lambda_current:.2f}, Time: {time.time() - time0:.2f} seconds')
+
+        print(f'KNN(k=5) metric train: {knn_metric:.4f}')
 
         if train_accuracy > 0.8:
             if lambda_current < 0.8:
@@ -139,11 +160,18 @@ def evaluate_model(model, test_loader, criterion):
 
     test_loss = total_loss / len(test_loader.dataset)
     test_accuracy = correct / total
+    knn_metric = np.mean(k_nearest_metric(5, model, test_loader, device, get_labels2(test_loader)))
+
+    acc_test.append(test_accuracy)
+    loss_test.append(test_loss)
+    knn_metric_test.append(knn_metric)
 
     print(f'Test Loss: {test_loss:.4f}, Test Accuracy: {test_accuracy:.4f}')
+    print(f'KNN(k=5) metric test: {knn_metric:.4f}')
 
 
-train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs, learning_rate)
+train_model_self_paced(model, train_loader, test_loader, criterion, opitmizer, num_epochs, learning_rate, device)
+
 
 
 
