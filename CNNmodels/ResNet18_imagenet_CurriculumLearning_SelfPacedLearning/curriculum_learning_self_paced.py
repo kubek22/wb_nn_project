@@ -1,3 +1,5 @@
+#final
+
 from RSSCN7_dataLoader import RSSCN7_DataLoader
 from torchvision.models import resnet18
 # from ..Resnet18.task.model import ResNet18
@@ -10,7 +12,7 @@ import random
 
 acc_train = []
 acc_test = []
-loss_train =[]
+loss_train = []
 loss_test = []
 time_epoch = []
 cur_lambda = []
@@ -22,8 +24,8 @@ time0 = time.time()
 
 data_dir = '/Users/katebokhan/Desktop/wb_nn_project/data/RSSCN7'
 batch_size = 32
-learning_rate = 0.001
-num_epochs = 2
+learning_rate = 0.0001
+num_epochs = 100
 lambda_beginning = 0.1
 lambda_end = 1
 
@@ -40,14 +42,17 @@ model.fc = nn.Linear(num_filters, 7)
 # pretrained_model_path = "/kaggle/input/resnet18-pretrained-on-dtd/pytorch/version1/1/resnet18_trained_on_DTD_from_80_to_90.pth"
 # pretrained_resnet18 = ResNet18()
 # pretrained_resnet18.load_state_dict(torch.load(pretrained_model_path, map_location=torch.device(device)))
+
 # model = pretrained_resnet18.to(device)
+
 # model.fc = nn.Linear(47, 7)
 
 criterion = nn.CrossEntropyLoss()
 opitmizer = optim.Adam(model.parameters(), lr=learning_rate)
 my_device = torch.device("cuda" if torch.cuda.is_available() else "mps")
 
-step = 0.03
+step = 0.05
+
 
 def train_model_self_paced(model, train_loader, test_loader, criterion, optimizer, num_epochs, learning_rate):
     device = my_device
@@ -102,8 +107,14 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         train_accuracy = correct / total
         num_images = len(easy_enough_loader.dataset)
 
-        if train_accuracy == 1:
-            learning_rate = 0.0008
+        if train_accuracy >= 0.88:
+            learning_rate = 0.00001
+
+        if train_accuracy >= 0.93:
+            learning_rate = 0.000001
+
+        if train_accuracy >= 0.96:
+            learning_rate = 0.0000001
 
         cur_time_ = time.time() - time0
 
@@ -112,16 +123,18 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         print(
             f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss:.4f}, Accuracy: {train_accuracy:.4f}, Images: {num_images}, Lambda: {lambda_current:.2f}, Time: {cur_time_:.2f} seconds')
 
-        if train_accuracy > 0.8:
-            if lambda_current < 0.8:
+        if train_accuracy > 0.85:
+            if lambda_current < 0.6:
                 lambda_current += step
-                if lambda_current>1:
+                if lambda_current > 1:
                     lambda_current = 1
             else:
                 counter = counter + 1
-                if counter % 3 == 0:
+                if counter % 2 == 0:
                     lambda_current += step
                     counter = 0
+                    if lambda_current > 1:
+                        lambda_current = 1
 
         acc_train.append(train_accuracy)
         loss_train.append(train_loss)
@@ -177,9 +190,4 @@ print(cur_learning_rate)
 print("Lambdas:")
 print(cur_lambda)
 
-
-
-
-
-
-
+torch.save(model, 'resnet18_imagenet_self_paced.pth')

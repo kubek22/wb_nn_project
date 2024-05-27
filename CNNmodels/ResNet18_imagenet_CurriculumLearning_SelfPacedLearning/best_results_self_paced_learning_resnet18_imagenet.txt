@@ -1,753 +1,317 @@
-learing_rate =  0.001
-Epoch [1/250], Loss: 1.4826, Accuracy: 0.5625, Images: 224, Lambda: 0.10, Time: 35.45 seconds
-Test Loss: 25.7010, Test Accuracy: 0.1804
-learing_rate =  0.001
-Epoch [2/250], Loss: 0.8892, Accuracy: 0.7143, Images: 224, Lambda: 0.10, Time: 59.95 seconds
-Test Loss: 12.9250, Test Accuracy: 0.4464
-learing_rate =  0.001
-Epoch [3/250], Loss: 0.5990, Accuracy: 0.7723, Images: 224, Lambda: 0.10, Time: 79.55 seconds
-Test Loss: 2.8279, Test Accuracy: 0.6232
-learing_rate =  0.001
-Epoch [4/250], Loss: 0.5255, Accuracy: 0.8348, Images: 224, Lambda: 0.10, Time: 99.64 seconds
-Test Loss: 1.1893, Test Accuracy: 0.6911
-learing_rate =  0.001
-Epoch [5/250], Loss: 0.5770, Accuracy: 0.8264, Images: 288, Lambda: 0.13, Time: 120.28 seconds
-Test Loss: 1.0194, Test Accuracy: 0.7196
-learing_rate =  0.001
-Epoch [6/250], Loss: 0.3200, Accuracy: 0.8807, Images: 352, Lambda: 0.16, Time: 140.40 seconds
-Test Loss: 0.8742, Test Accuracy: 0.7196
-learing_rate =  0.001
-Epoch [7/250], Loss: 0.3202, Accuracy: 0.8822, Images: 416, Lambda: 0.19, Time: 161.18 seconds
-Test Loss: 0.6114, Test Accuracy: 0.8357
-learing_rate =  0.001
-Epoch [8/250], Loss: 0.3101, Accuracy: 0.8854, Images: 480, Lambda: 0.22, Time: 182.18 seconds
-Test Loss: 0.6466, Test Accuracy: 0.8000
-learing_rate =  0.001
-Epoch [9/250], Loss: 0.2608, Accuracy: 0.9026, Images: 544, Lambda: 0.25, Time: 202.77 seconds
-Test Loss: 1.3135, Test Accuracy: 0.7000
-learing_rate =  0.001
-Epoch [10/250], Loss: 0.3215, Accuracy: 0.8914, Images: 608, Lambda: 0.28, Time: 224.05 seconds
-Test Loss: 0.5546, Test Accuracy: 0.8161
-learing_rate =  0.001
-Epoch [11/250], Loss: 0.2004, Accuracy: 0.9211, Images: 672, Lambda: 0.31, Time: 245.48 seconds
-Test Loss: 0.4524, Test Accuracy: 0.8518
-learing_rate =  0.001
-Epoch [12/250], Loss: 0.2424, Accuracy: 0.9171, Images: 736, Lambda: 0.34, Time: 266.81 seconds
-Test Loss: 0.7125, Test Accuracy: 0.7893
-learing_rate =  0.001
-Epoch [13/250], Loss: 0.3841, Accuracy: 0.8925, Images: 800, Lambda: 0.37, Time: 289.50 seconds
-Test Loss: 2.4846, Test Accuracy: 0.5875
-learing_rate =  0.001
-Epoch [14/250], Loss: 0.3053, Accuracy: 0.8951, Images: 896, Lambda: 0.40, Time: 311.77 seconds
-Test Loss: 0.7808, Test Accuracy: 0.7536
-learing_rate =  0.001
-Epoch [15/250], Loss: 0.2746, Accuracy: 0.9062, Images: 960, Lambda: 0.43, Time: 334.16 seconds
-Test Loss: 0.6983, Test Accuracy: 0.8089
-learing_rate =  0.001
-Epoch [16/250], Loss: 0.2727, Accuracy: 0.9219, Images: 1024, Lambda: 0.46, Time: 356.87 seconds
-Test Loss: 0.7963, Test Accuracy: 0.7929
-learing_rate =  0.001
-Epoch [17/250], Loss: 0.2260, Accuracy: 0.9274, Images: 1088, Lambda: 0.49, Time: 380.13 seconds
-Test Loss: 1.1067, Test Accuracy: 0.7518
-learing_rate =  0.001
-Epoch [18/250], Loss: 0.2767, Accuracy: 0.9097, Images: 1152, Lambda: 0.52, Time: 404.09 seconds
-Test Loss: 0.3877, Test Accuracy: 0.8911
-learing_rate =  0.001
-Epoch [19/250], Loss: 0.1921, Accuracy: 0.9367, Images: 1216, Lambda: 0.55, Time: 427.83 seconds
-Test Loss: 0.6287, Test Accuracy: 0.8250
-learing_rate =  0.001
-Epoch [20/250], Loss: 0.2232, Accuracy: 0.9234, Images: 1280, Lambda: 0.58, Time: 451.55 seconds
-Test Loss: 0.5970, Test Accuracy: 0.8339
-learing_rate =  0.001
-Epoch [21/250], Loss: 0.2224, Accuracy: 0.9323, Images: 1344, Lambda: 0.61, Time: 476.04 seconds
-Test Loss: 0.4244, Test Accuracy: 0.8554
-learing_rate =  0.001
-Epoch [22/250], Loss: 0.1534, Accuracy: 0.9553, Images: 1408, Lambda: 0.64, Time: 500.08 seconds
-Test Loss: 0.3846, Test Accuracy: 0.8804
-learing_rate =  0.001
-Epoch [23/250], Loss: 0.2669, Accuracy: 0.9096, Images: 1472, Lambda: 0.67, Time: 524.55 seconds
-Test Loss: 0.6620, Test Accuracy: 0.8161
-learing_rate =  0.001
-Epoch [24/250], Loss: 0.1966, Accuracy: 0.9362, Images: 1568, Lambda: 0.70, Time: 549.22 seconds
-Test Loss: 0.4519, Test Accuracy: 0.8554
-learing_rate =  0.001
-Epoch [25/250], Loss: 0.1668, Accuracy: 0.9363, Images: 1632, Lambda: 0.73, Time: 574.24 seconds
-Test Loss: 0.3912, Test Accuracy: 0.8732
-learing_rate =  0.001
-Epoch [26/250], Loss: 0.1369, Accuracy: 0.9617, Images: 1696, Lambda: 0.76, Time: 599.64 seconds
-Test Loss: 0.3983, Test Accuracy: 0.8714
-learing_rate =  0.001
-Epoch [27/250], Loss: 0.1274, Accuracy: 0.9574, Images: 1760, Lambda: 0.79, Time: 625.03 seconds
-Test Loss: 0.3781, Test Accuracy: 0.8768
-learing_rate =  0.001
-Epoch [28/250], Loss: 0.1031, Accuracy: 0.9693, Images: 1824, Lambda: 0.82, Time: 650.66 seconds
-Test Loss: 0.6951, Test Accuracy: 0.8500
-learing_rate =  0.001
-Epoch [29/250], Loss: 0.1163, Accuracy: 0.9649, Images: 1824, Lambda: 0.82, Time: 676.10 seconds
-Test Loss: 0.3939, Test Accuracy: 0.8857
-learing_rate =  0.001
-Epoch [30/250], Loss: 0.2216, Accuracy: 0.9359, Images: 1824, Lambda: 0.82, Time: 701.87 seconds
-Test Loss: 0.4410, Test Accuracy: 0.8625
-learing_rate =  0.001
-Epoch [31/250], Loss: 0.1962, Accuracy: 0.9364, Images: 1888, Lambda: 0.85, Time: 728.23 seconds
-Test Loss: 0.3844, Test Accuracy: 0.8821
-learing_rate =  0.001
-Epoch [32/250], Loss: 0.0997, Accuracy: 0.9672, Images: 1888, Lambda: 0.85, Time: 754.15 seconds
-Test Loss: 0.2900, Test Accuracy: 0.9071
-learing_rate =  0.001
-Epoch [33/250], Loss: 0.0762, Accuracy: 0.9751, Images: 1888, Lambda: 0.85, Time: 780.20 seconds
-Test Loss: 0.4685, Test Accuracy: 0.8643
-learing_rate =  0.001
-Epoch [34/250], Loss: 0.1074, Accuracy: 0.9621, Images: 1952, Lambda: 0.88, Time: 806.01 seconds
-Test Loss: 0.3244, Test Accuracy: 0.9071
-learing_rate =  0.001
-Epoch [35/250], Loss: 0.1800, Accuracy: 0.9436, Images: 1952, Lambda: 0.88, Time: 831.76 seconds
-Test Loss: 0.2957, Test Accuracy: 0.9107
-learing_rate =  0.001
-Epoch [36/250], Loss: 0.1229, Accuracy: 0.9585, Images: 1952, Lambda: 0.88, Time: 858.12 seconds
-Test Loss: 0.8454, Test Accuracy: 0.8196
-learing_rate =  0.001
-Epoch [37/250], Loss: 0.0992, Accuracy: 0.9673, Images: 2016, Lambda: 0.91, Time: 884.43 seconds
-Test Loss: 0.3309, Test Accuracy: 0.8982
-learing_rate =  0.001
-Epoch [38/250], Loss: 0.0596, Accuracy: 0.9807, Images: 2016, Lambda: 0.91, Time: 910.62 seconds
-Test Loss: 0.4184, Test Accuracy: 0.8857
-learing_rate =  0.001
-Epoch [39/250], Loss: 0.0826, Accuracy: 0.9782, Images: 2016, Lambda: 0.91, Time: 937.05 seconds
-Test Loss: 0.3968, Test Accuracy: 0.8982
-learing_rate =  0.001
-Epoch [40/250], Loss: 0.0824, Accuracy: 0.9750, Images: 2080, Lambda: 0.94, Time: 964.15 seconds
-Test Loss: 0.3950, Test Accuracy: 0.9071
-learing_rate =  0.001
-Epoch [41/250], Loss: 0.0341, Accuracy: 0.9899, Images: 2080, Lambda: 0.94, Time: 990.43 seconds
-Test Loss: 0.3693, Test Accuracy: 0.9054
-learing_rate =  0.001
-Epoch [42/250], Loss: 0.0337, Accuracy: 0.9904, Images: 2080, Lambda: 0.94, Time: 1016.90 seconds
-Test Loss: 0.2568, Test Accuracy: 0.9250
-learing_rate =  0.001
-Epoch [43/250], Loss: 0.0401, Accuracy: 0.9883, Images: 2144, Lambda: 0.97, Time: 1044.11 seconds
-Test Loss: 0.6733, Test Accuracy: 0.8804
-learing_rate =  0.001
-Epoch [44/250], Loss: 0.0539, Accuracy: 0.9823, Images: 2144, Lambda: 0.97, Time: 1070.95 seconds
-Test Loss: 0.4969, Test Accuracy: 0.8857
-learing_rate =  0.001
-Epoch [45/250], Loss: 0.0378, Accuracy: 0.9888, Images: 2144, Lambda: 0.97, Time: 1097.51 seconds
-Test Loss: 0.4156, Test Accuracy: 0.9054
-learing_rate =  0.001
-Epoch [46/250], Loss: 0.1202, Accuracy: 0.9683, Images: 2240, Lambda: 1.00, Time: 1121.12 seconds
-Test Loss: 0.3217, Test Accuracy: 0.9018
-learing_rate =  0.001
-Epoch [47/250], Loss: 0.0804, Accuracy: 0.9705, Images: 2240, Lambda: 1.00, Time: 1144.86 seconds
-Test Loss: 0.8623, Test Accuracy: 0.8375
-learing_rate =  0.001
-Epoch [48/250], Loss: 0.0589, Accuracy: 0.9817, Images: 2240, Lambda: 1.00, Time: 1168.40 seconds
-Test Loss: 0.4428, Test Accuracy: 0.8893
-learing_rate =  0.001
-Epoch [49/250], Loss: 0.0332, Accuracy: 0.9906, Images: 2240, Lambda: 1.03, Time: 1192.11 seconds
-Test Loss: 0.4561, Test Accuracy: 0.8875
-learing_rate =  0.001
-Epoch [50/250], Loss: 0.0093, Accuracy: 0.9969, Images: 2240, Lambda: 1.03, Time: 1215.70 seconds
-Test Loss: 0.3006, Test Accuracy: 0.9214
-learing_rate =  0.001
-Epoch [51/250], Loss: 0.0038, Accuracy: 0.9991, Images: 2240, Lambda: 1.03, Time: 1239.22 seconds
-Test Loss: 0.2713, Test Accuracy: 0.9232
-learing_rate =  0.001
-Epoch [52/250], Loss: 0.0018, Accuracy: 0.9996, Images: 2240, Lambda: 1.06, Time: 1263.17 seconds
-Test Loss: 0.2512, Test Accuracy: 0.9304
-learing_rate =  0.0008
-Epoch [53/250], Loss: 0.0004, Accuracy: 1.0000, Images: 2240, Lambda: 1.06, Time: 1286.86 seconds
-Test Loss: 0.2506, Test Accuracy: 0.9321
-learing_rate =  0.0008
-Epoch [54/250], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.06, Time: 1310.61 seconds
-Test Loss: 0.2501, Test Accuracy: 0.9375
-learing_rate =  0.0008
-Epoch [55/250], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.09, Time: 1334.30 seconds
-Test Loss: 0.2498, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [56/250], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.09, Time: 1357.66 seconds
-Test Loss: 0.2498, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [57/250], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.09, Time: 1381.38 seconds
-Test Loss: 0.2498, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [58/250], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.12, Time: 1404.89 seconds
-Test Loss: 0.2498, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [59/250], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.12, Time: 1428.69 seconds
-Test Loss: 0.2499, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [60/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.12, Time: 1452.09 seconds
-Test Loss: 0.2500, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [61/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.15, Time: 1475.93 seconds
-Test Loss: 0.2501, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [62/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.15, Time: 1499.71 seconds
-Test Loss: 0.2502, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [63/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.15, Time: 1523.27 seconds
-Test Loss: 0.2504, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [64/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.18, Time: 1546.90 seconds
-Test Loss: 0.2505, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [65/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.18, Time: 1570.61 seconds
-Test Loss: 0.2507, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [66/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.18, Time: 1594.31 seconds
-Test Loss: 0.2508, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [67/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.21, Time: 1618.49 seconds
-Test Loss: 0.2510, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [68/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.21, Time: 1641.85 seconds
-Test Loss: 0.2511, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [69/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.21, Time: 1665.61 seconds
-Test Loss: 0.2513, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [70/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.24, Time: 1689.45 seconds
-Test Loss: 0.2515, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [71/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.24, Time: 1713.18 seconds
-Test Loss: 0.2517, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [72/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.24, Time: 1737.63 seconds
-Test Loss: 0.2519, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [73/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.27, Time: 1761.09 seconds
-Test Loss: 0.2520, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [74/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.27, Time: 1784.79 seconds
-Test Loss: 0.2522, Test Accuracy: 0.9339
-learing_rate =  0.0008
-Epoch [75/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.27, Time: 1808.60 seconds
-Test Loss: 0.2524, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [76/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.30, Time: 1832.25 seconds
-Test Loss: 0.2526, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [77/250], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.30, Time: 1856.12 seconds
-Test Loss: 0.2528, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [78/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.30, Time: 1879.67 seconds
-Test Loss: 0.2530, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [79/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.33, Time: 1903.35 seconds
-Test Loss: 0.2533, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [80/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.33, Time: 1927.13 seconds
-Test Loss: 0.2535, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [81/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.33, Time: 1950.44 seconds
-Test Loss: 0.2537, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [82/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.36, Time: 1974.43 seconds
-Test Loss: 0.2539, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [83/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.36, Time: 1998.02 seconds
-Test Loss: 0.2541, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [84/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.36, Time: 2021.84 seconds
-Test Loss: 0.2544, Test Accuracy: 0.9357
-learing_rate =  0.0008
-Epoch [85/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.39, Time: 2045.54 seconds
-Test Loss: 0.2546, Test Accuracy: 0.9375
-learing_rate =  0.0008
-Epoch [86/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.39, Time: 2069.01 seconds
-Test Loss: 0.2548, Test Accuracy: 0.9375
-learing_rate =  0.0008
-Epoch [87/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.39, Time: 2092.67 seconds
-Test Loss: 0.2551, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [88/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.42, Time: 2116.30 seconds
-Test Loss: 0.2553, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [89/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.42, Time: 2139.98 seconds
-Test Loss: 0.2555, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [90/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.42, Time: 2164.14 seconds
-Test Loss: 0.2558, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [91/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.45, Time: 2188.08 seconds
-Test Loss: 0.2560, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [92/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.45, Time: 2212.14 seconds
-Test Loss: 0.2562, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [93/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.45, Time: 2236.01 seconds
-Test Loss: 0.2565, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [94/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.48, Time: 2259.66 seconds
-Test Loss: 0.2567, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [95/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.48, Time: 2283.58 seconds
-Test Loss: 0.2570, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [96/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.48, Time: 2307.20 seconds
-Test Loss: 0.2572, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [97/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.51, Time: 2330.85 seconds
-Test Loss: 0.2574, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [98/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.51, Time: 2354.60 seconds
-Test Loss: 0.2577, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [99/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.51, Time: 2378.44 seconds
-Test Loss: 0.2580, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [100/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.54, Time: 2402.58 seconds
-Test Loss: 0.2582, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [101/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.54, Time: 2426.24 seconds
-Test Loss: 0.2585, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [102/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.54, Time: 2449.96 seconds
-Test Loss: 0.2587, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [103/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.57, Time: 2473.85 seconds
-Test Loss: 0.2590, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [104/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.57, Time: 2498.08 seconds
-Test Loss: 0.2593, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [105/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.57, Time: 2522.02 seconds
-Test Loss: 0.2595, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [106/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.60, Time: 2545.63 seconds
-Test Loss: 0.2598, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [107/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.60, Time: 2569.66 seconds
-Test Loss: 0.2601, Test Accuracy: 0.9393
-learing_rate =  0.0008
-Epoch [108/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.60, Time: 2593.37 seconds
-Test Loss: 0.2604, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [109/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.63, Time: 2617.03 seconds
-Test Loss: 0.2606, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [110/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.63, Time: 2640.74 seconds
-Test Loss: 0.2609, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [111/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.63, Time: 2664.70 seconds
-Test Loss: 0.2612, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [112/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.66, Time: 2688.67 seconds
-Test Loss: 0.2615, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [113/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.66, Time: 2712.73 seconds
-Test Loss: 0.2618, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [114/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.66, Time: 2736.34 seconds
-Test Loss: 0.2621, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [115/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.69, Time: 2760.53 seconds
-Test Loss: 0.2624, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [116/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.69, Time: 2784.24 seconds
-Test Loss: 0.2627, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [117/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.69, Time: 2808.51 seconds
-Test Loss: 0.2630, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [118/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.72, Time: 2832.53 seconds
-Test Loss: 0.2633, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [119/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.72, Time: 2856.12 seconds
-Test Loss: 0.2636, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [120/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.72, Time: 2880.69 seconds
-Test Loss: 0.2639, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [121/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.75, Time: 2904.30 seconds
-Test Loss: 0.2642, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [122/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.75, Time: 2928.25 seconds
-Test Loss: 0.2645, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [123/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.75, Time: 2951.86 seconds
-Test Loss: 0.2648, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [124/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.78, Time: 2975.47 seconds
-Test Loss: 0.2651, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [125/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.78, Time: 2999.82 seconds
-Test Loss: 0.2654, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [126/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.78, Time: 3023.72 seconds
-Test Loss: 0.2657, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [127/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.81, Time: 3048.57 seconds
-Test Loss: 0.2660, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [128/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.81, Time: 3073.43 seconds
-Test Loss: 0.2664, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [129/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.81, Time: 3098.38 seconds
-Test Loss: 0.2667, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [130/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.84, Time: 3123.35 seconds
-Test Loss: 0.2670, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [131/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.84, Time: 3147.59 seconds
-Test Loss: 0.2673, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [132/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.84, Time: 3171.34 seconds
-Test Loss: 0.2677, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [133/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.87, Time: 3195.15 seconds
-Test Loss: 0.2680, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [134/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.87, Time: 3219.47 seconds
-Test Loss: 0.2683, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [135/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.87, Time: 3243.99 seconds
-Test Loss: 0.2686, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [136/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.90, Time: 3267.98 seconds
-Test Loss: 0.2690, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [137/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.90, Time: 3291.95 seconds
-Test Loss: 0.2693, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [138/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.90, Time: 3315.61 seconds
-Test Loss: 0.2696, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [139/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.93, Time: 3339.28 seconds
-Test Loss: 0.2700, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [140/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.93, Time: 3363.39 seconds
-Test Loss: 0.2703, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [141/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.93, Time: 3386.84 seconds
-Test Loss: 0.2706, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [142/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.96, Time: 3410.78 seconds
-Test Loss: 0.2710, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [143/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.96, Time: 3434.50 seconds
-Test Loss: 0.2713, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [144/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.96, Time: 3458.25 seconds
-Test Loss: 0.2717, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [145/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.99, Time: 3482.12 seconds
-Test Loss: 0.2720, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [146/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.99, Time: 3505.81 seconds
-Test Loss: 0.2724, Test Accuracy: 0.9429
-learing_rate =  0.0008
-Epoch [147/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 1.99, Time: 3529.56 seconds
-Test Loss: 0.2727, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [148/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.02, Time: 3553.22 seconds
-Test Loss: 0.2731, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [149/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.02, Time: 3576.65 seconds
-Test Loss: 0.2734, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [150/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.02, Time: 3600.54 seconds
-Test Loss: 0.2738, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [151/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.05, Time: 3624.07 seconds
-Test Loss: 0.2741, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [152/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.05, Time: 3647.71 seconds
-Test Loss: 0.2745, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [153/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.05, Time: 3671.47 seconds
-Test Loss: 0.2748, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [154/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.08, Time: 3695.56 seconds
-Test Loss: 0.2752, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [155/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.08, Time: 3719.56 seconds
-Test Loss: 0.2756, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [156/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.08, Time: 3743.04 seconds
-Test Loss: 0.2759, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [157/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.11, Time: 3766.71 seconds
-Test Loss: 0.2763, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [158/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.11, Time: 3790.48 seconds
-Test Loss: 0.2767, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [159/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.11, Time: 3814.02 seconds
-Test Loss: 0.2770, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [160/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.14, Time: 3837.77 seconds
-Test Loss: 0.2774, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [161/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.14, Time: 3861.50 seconds
-Test Loss: 0.2778, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [162/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.14, Time: 3885.44 seconds
-Test Loss: 0.2782, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [163/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.17, Time: 3909.29 seconds
-Test Loss: 0.2786, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [164/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.17, Time: 3932.80 seconds
-Test Loss: 0.2790, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [165/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.17, Time: 3956.66 seconds
-Test Loss: 0.2793, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [166/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.20, Time: 3980.17 seconds
-Test Loss: 0.2797, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [167/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.20, Time: 4003.85 seconds
-Test Loss: 0.2801, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [168/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.20, Time: 4027.59 seconds
-Test Loss: 0.2805, Test Accuracy: 0.9446
-learing_rate =  0.0008
-Epoch [169/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.23, Time: 4051.24 seconds
-Test Loss: 0.2809, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [170/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.23, Time: 4075.03 seconds
-Test Loss: 0.2813, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [171/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.23, Time: 4098.65 seconds
-Test Loss: 0.2817, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [172/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.26, Time: 4122.34 seconds
-Test Loss: 0.2821, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [173/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.26, Time: 4146.13 seconds
-Test Loss: 0.2825, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [174/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.26, Time: 4169.54 seconds
-Test Loss: 0.2829, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [175/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.29, Time: 4193.65 seconds
-Test Loss: 0.2833, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [176/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.29, Time: 4217.30 seconds
-Test Loss: 0.2837, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [177/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.29, Time: 4240.73 seconds
-Test Loss: 0.2841, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [178/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.32, Time: 4264.39 seconds
-Test Loss: 0.2845, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [179/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.32, Time: 4288.06 seconds
-Test Loss: 0.2849, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [180/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.32, Time: 4311.92 seconds
-Test Loss: 0.2853, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [181/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.35, Time: 4335.51 seconds
-Test Loss: 0.2857, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [182/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.35, Time: 4359.34 seconds
-Test Loss: 0.2862, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [183/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.35, Time: 4383.05 seconds
-Test Loss: 0.2866, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [184/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.38, Time: 4406.84 seconds
-Test Loss: 0.2870, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [185/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.38, Time: 4430.90 seconds
-Test Loss: 0.2874, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [186/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.38, Time: 4454.92 seconds
-Test Loss: 0.2878, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [187/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.41, Time: 4478.68 seconds
-Test Loss: 0.2882, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [188/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.41, Time: 4502.43 seconds
-Test Loss: 0.2886, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [189/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.41, Time: 4525.93 seconds
-Test Loss: 0.2891, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [190/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.44, Time: 4549.58 seconds
-Test Loss: 0.2895, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [191/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.44, Time: 4573.14 seconds
-Test Loss: 0.2899, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [192/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.44, Time: 4596.88 seconds
-Test Loss: 0.2903, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [193/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.47, Time: 4620.63 seconds
-Test Loss: 0.2908, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [194/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.47, Time: 4644.07 seconds
-Test Loss: 0.2912, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [195/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.47, Time: 4667.84 seconds
-Test Loss: 0.2916, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [196/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.50, Time: 4691.72 seconds
-Test Loss: 0.2920, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [197/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.50, Time: 4715.28 seconds
-Test Loss: 0.2925, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [198/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.50, Time: 4739.00 seconds
-Test Loss: 0.2929, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [199/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.53, Time: 4762.42 seconds
-Test Loss: 0.2933, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [200/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.53, Time: 4786.07 seconds
-Test Loss: 0.2937, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [201/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.53, Time: 4809.74 seconds
-Test Loss: 0.2941, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [202/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.56, Time: 4833.12 seconds
-Test Loss: 0.2946, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [203/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.56, Time: 4857.35 seconds
-Test Loss: 0.2950, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [204/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.56, Time: 4881.15 seconds
-Test Loss: 0.2954, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [205/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.59, Time: 4904.83 seconds
-Test Loss: 0.2959, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [206/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.59, Time: 4928.59 seconds
-Test Loss: 0.2963, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [207/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.59, Time: 4952.34 seconds
-Test Loss: 0.2968, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [208/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.62, Time: 4976.63 seconds
-Test Loss: 0.2972, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [209/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.62, Time: 5000.49 seconds
-Test Loss: 0.2977, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [210/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.62, Time: 5024.14 seconds
-Test Loss: 0.2981, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [211/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.65, Time: 5048.02 seconds
-Test Loss: 0.2986, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [212/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.65, Time: 5071.93 seconds
-Test Loss: 0.2990, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [213/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.65, Time: 5095.92 seconds
-Test Loss: 0.2995, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [214/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.68, Time: 5119.67 seconds
-Test Loss: 0.2999, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [215/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.68, Time: 5143.43 seconds
-Test Loss: 0.3003, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [216/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.68, Time: 5167.35 seconds
-Test Loss: 0.3007, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [217/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.71, Time: 5191.34 seconds
-Test Loss: 0.3012, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [218/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.71, Time: 5215.53 seconds
-Test Loss: 0.3016, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [219/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.71, Time: 5239.43 seconds
-Test Loss: 0.3020, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [220/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.74, Time: 5263.16 seconds
-Test Loss: 0.3025, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [221/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.74, Time: 5287.31 seconds
-Test Loss: 0.3030, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [222/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.74, Time: 5310.97 seconds
-Test Loss: 0.3034, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [223/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.77, Time: 5334.68 seconds
-Test Loss: 0.3039, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [224/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.77, Time: 5358.28 seconds
-Test Loss: 0.3043, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [225/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.77, Time: 5382.02 seconds
-Test Loss: 0.3047, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [226/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.80, Time: 5405.94 seconds
-Test Loss: 0.3052, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [227/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.80, Time: 5429.59 seconds
-Test Loss: 0.3056, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [228/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.80, Time: 5454.00 seconds
-Test Loss: 0.3060, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [229/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.83, Time: 5478.04 seconds
-Test Loss: 0.3064, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [230/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.83, Time: 5501.90 seconds
-Test Loss: 0.3068, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [231/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.83, Time: 5525.75 seconds
-Test Loss: 0.3072, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [232/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.86, Time: 5549.60 seconds
-Test Loss: 0.3076, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [233/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.86, Time: 5573.33 seconds
-Test Loss: 0.3081, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [234/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.86, Time: 5597.25 seconds
-Test Loss: 0.3085, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [235/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.89, Time: 5621.49 seconds
-Test Loss: 0.3090, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [236/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.89, Time: 5645.65 seconds
-Test Loss: 0.3094, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [237/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.89, Time: 5669.53 seconds
-Test Loss: 0.3099, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [238/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.92, Time: 5693.37 seconds
-Test Loss: 0.3103, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [239/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.92, Time: 5717.09 seconds
-Test Loss: 0.3108, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [240/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.92, Time: 5740.60 seconds
-Test Loss: 0.3112, Test Accuracy: 0.9464
-learing_rate =  0.0008
-Epoch [241/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.95, Time: 5764.68 seconds
-Test Loss: 0.3116, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [242/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.95, Time: 5788.30 seconds
-Test Loss: 0.3121, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [243/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.95, Time: 5812.10 seconds
-Test Loss: 0.3125, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [244/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.98, Time: 5835.56 seconds
-Test Loss: 0.3129, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [245/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.98, Time: 5859.15 seconds
-Test Loss: 0.3134, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [246/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 2.98, Time: 5882.88 seconds
-Test Loss: 0.3138, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [247/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 3.01, Time: 5906.49 seconds
-Test Loss: 0.3142, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [248/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 3.01, Time: 5930.69 seconds
-Test Loss: 0.3146, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [249/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 3.01, Time: 5954.55 seconds
-Test Loss: 0.3150, Test Accuracy: 0.9482
-learing_rate =  0.0008
-Epoch [250/250], Loss: 0.0000, Accuracy: 1.0000, Images: 2240, Lambda: 3.04, Time: 5978.06 seconds
-Test Loss: 0.3155, Test Accuracy: 0.9482
+# final
 
-
+learing_rate =  0.0001
+Epoch [1/100], Loss: 1.3892, Accuracy: 0.5223, Images: 224, Lambda: 0.10, Time: 29.14 seconds
+Test Loss: 1.1494, Test Accuracy: 0.5571
+learing_rate =  0.0001
+Epoch [2/100], Loss: 0.6462, Accuracy: 0.7857, Images: 224, Lambda: 0.10, Time: 51.34 seconds
+Test Loss: 0.6834, Test Accuracy: 0.7607
+learing_rate =  1e-05
+Epoch [3/100], Loss: 0.3638, Accuracy: 0.9152, Images: 224, Lambda: 0.10, Time: 71.57 seconds
+Test Loss: 0.4862, Test Accuracy: 0.8214
+learing_rate =  1e-05
+Epoch [4/100], Loss: 0.3000, Accuracy: 0.9094, Images: 320, Lambda: 0.15, Time: 91.21 seconds
+Test Loss: 0.3185, Test Accuracy: 0.8911
+learing_rate =  1e-06
+Epoch [5/100], Loss: 0.2142, Accuracy: 0.9375, Images: 448, Lambda: 0.20, Time: 111.75 seconds
+Test Loss: 0.2383, Test Accuracy: 0.9196
+learing_rate =  1e-06
+Epoch [6/100], Loss: 0.1655, Accuracy: 0.9485, Images: 544, Lambda: 0.25, Time: 133.74 seconds
+Test Loss: 0.1914, Test Accuracy: 0.9286
+learing_rate =  1e-06
+Epoch [7/100], Loss: 0.1742, Accuracy: 0.9539, Images: 672, Lambda: 0.30, Time: 155.07 seconds
+Test Loss: 0.2015, Test Accuracy: 0.9286
+learing_rate =  1e-07
+Epoch [8/100], Loss: 0.1060, Accuracy: 0.9674, Images: 768, Lambda: 0.35, Time: 177.12 seconds
+Test Loss: 0.1969, Test Accuracy: 0.9268
+learing_rate =  1e-07
+Epoch [9/100], Loss: 0.0892, Accuracy: 0.9745, Images: 864, Lambda: 0.40, Time: 199.46 seconds
+Test Loss: 0.1522, Test Accuracy: 0.9446
+learing_rate =  1e-07
+Epoch [10/100], Loss: 0.1014, Accuracy: 0.9677, Images: 992, Lambda: 0.45, Time: 221.85 seconds
+Test Loss: 0.1890, Test Accuracy: 0.9339
+learing_rate =  1e-07
+Epoch [11/100], Loss: 0.0915, Accuracy: 0.9743, Images: 1088, Lambda: 0.50, Time: 245.11 seconds
+Test Loss: 0.1495, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [12/100], Loss: 0.0768, Accuracy: 0.9786, Images: 1216, Lambda: 0.55, Time: 268.75 seconds
+Test Loss: 0.1571, Test Accuracy: 0.9482
+learing_rate =  1e-07
+Epoch [13/100], Loss: 0.0859, Accuracy: 0.9688, Images: 1344, Lambda: 0.60, Time: 292.21 seconds
+Test Loss: 0.1808, Test Accuracy: 0.9393
+learing_rate =  1e-07
+Epoch [14/100], Loss: 0.0422, Accuracy: 0.9888, Images: 1344, Lambda: 0.60, Time: 316.01 seconds
+Test Loss: 0.1552, Test Accuracy: 0.9518
+learing_rate =  1e-07
+Epoch [15/100], Loss: 0.0195, Accuracy: 0.9965, Images: 1440, Lambda: 0.65, Time: 340.27 seconds
+Test Loss: 0.1213, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [16/100], Loss: 0.0234, Accuracy: 0.9951, Images: 1440, Lambda: 0.65, Time: 364.48 seconds
+Test Loss: 0.1337, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [17/100], Loss: 0.0222, Accuracy: 0.9955, Images: 1568, Lambda: 0.70, Time: 388.86 seconds
+Test Loss: 0.2020, Test Accuracy: 0.9429
+learing_rate =  1e-07
+Epoch [18/100], Loss: 0.0274, Accuracy: 0.9943, Images: 1568, Lambda: 0.70, Time: 413.09 seconds
+Test Loss: 0.1535, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [19/100], Loss: 0.0169, Accuracy: 0.9964, Images: 1664, Lambda: 0.75, Time: 438.24 seconds
+Test Loss: 0.1513, Test Accuracy: 0.9482
+learing_rate =  1e-07
+Epoch [20/100], Loss: 0.0193, Accuracy: 0.9952, Images: 1664, Lambda: 0.75, Time: 463.15 seconds
+Test Loss: 0.1463, Test Accuracy: 0.9500
+learing_rate =  1e-07
+Epoch [21/100], Loss: 0.0198, Accuracy: 0.9950, Images: 1792, Lambda: 0.80, Time: 488.62 seconds
+Test Loss: 0.1849, Test Accuracy: 0.9411
+learing_rate =  1e-07
+Epoch [22/100], Loss: 0.0137, Accuracy: 0.9978, Images: 1792, Lambda: 0.80, Time: 513.62 seconds
+Test Loss: 0.1675, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [23/100], Loss: 0.0175, Accuracy: 0.9942, Images: 1888, Lambda: 0.85, Time: 538.87 seconds
+Test Loss: 0.2282, Test Accuracy: 0.9232
+learing_rate =  1e-07
+Epoch [24/100], Loss: 0.0256, Accuracy: 0.9931, Images: 1888, Lambda: 0.85, Time: 564.88 seconds
+Test Loss: 0.1880, Test Accuracy: 0.9393
+learing_rate =  1e-07
+Epoch [25/100], Loss: 0.0148, Accuracy: 0.9975, Images: 2016, Lambda: 0.90, Time: 590.99 seconds
+Test Loss: 0.1934, Test Accuracy: 0.9429
+learing_rate =  1e-07
+Epoch [26/100], Loss: 0.0069, Accuracy: 0.9995, Images: 2016, Lambda: 0.90, Time: 617.25 seconds
+Test Loss: 0.1533, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [27/100], Loss: 0.0211, Accuracy: 0.9957, Images: 2112, Lambda: 0.95, Time: 643.17 seconds
+Test Loss: 0.1334, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [28/100], Loss: 0.0054, Accuracy: 0.9995, Images: 2112, Lambda: 0.95, Time: 669.69 seconds
+Test Loss: 0.1263, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [29/100], Loss: 0.0211, Accuracy: 0.9973, Images: 2240, Lambda: 1.00, Time: 692.86 seconds
+Test Loss: 0.1226, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [30/100], Loss: 0.0515, Accuracy: 0.9848, Images: 2240, Lambda: 1.00, Time: 716.08 seconds
+Test Loss: 0.2252, Test Accuracy: 0.9304
+learing_rate =  1e-07
+Epoch [31/100], Loss: 0.0247, Accuracy: 0.9938, Images: 2240, Lambda: 1.00, Time: 739.75 seconds
+Test Loss: 0.1979, Test Accuracy: 0.9411
+learing_rate =  1e-07
+Epoch [32/100], Loss: 0.0248, Accuracy: 0.9911, Images: 2240, Lambda: 1.00, Time: 762.86 seconds
+Test Loss: 0.1740, Test Accuracy: 0.9518
+learing_rate =  1e-07
+Epoch [33/100], Loss: 0.0341, Accuracy: 0.9884, Images: 2240, Lambda: 1.00, Time: 786.47 seconds
+Test Loss: 0.1919, Test Accuracy: 0.9357
+learing_rate =  1e-07
+Epoch [34/100], Loss: 0.0329, Accuracy: 0.9862, Images: 2240, Lambda: 1.00, Time: 810.03 seconds
+Test Loss: 0.3081, Test Accuracy: 0.9143
+learing_rate =  1e-07
+Epoch [35/100], Loss: 0.0261, Accuracy: 0.9920, Images: 2240, Lambda: 1.00, Time: 833.43 seconds
+Test Loss: 0.1785, Test Accuracy: 0.9464
+learing_rate =  1e-07
+Epoch [36/100], Loss: 0.0138, Accuracy: 0.9978, Images: 2240, Lambda: 1.00, Time: 857.04 seconds
+Test Loss: 0.1300, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [37/100], Loss: 0.0042, Accuracy: 0.9996, Images: 2240, Lambda: 1.00, Time: 880.26 seconds
+Test Loss: 0.1157, Test Accuracy: 0.9643
+learing_rate =  1e-07
+Epoch [38/100], Loss: 0.0096, Accuracy: 0.9973, Images: 2240, Lambda: 1.00, Time: 903.60 seconds
+Test Loss: 0.1382, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [39/100], Loss: 0.0075, Accuracy: 0.9982, Images: 2240, Lambda: 1.00, Time: 926.91 seconds
+Test Loss: 0.1231, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [40/100], Loss: 0.0016, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 950.31 seconds
+Test Loss: 0.1334, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [41/100], Loss: 0.0017, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 973.77 seconds
+Test Loss: 0.1352, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [42/100], Loss: 0.0007, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 997.31 seconds
+Test Loss: 0.1260, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [43/100], Loss: 0.0009, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1020.69 seconds
+Test Loss: 0.1346, Test Accuracy: 0.9679
+learing_rate =  1e-07
+Epoch [44/100], Loss: 0.0009, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1044.58 seconds
+Test Loss: 0.1203, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [45/100], Loss: 0.0034, Accuracy: 0.9987, Images: 2240, Lambda: 1.00, Time: 1067.85 seconds
+Test Loss: 0.1326, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [46/100], Loss: 0.0023, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1091.33 seconds
+Test Loss: 0.1313, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [47/100], Loss: 0.0037, Accuracy: 0.9991, Images: 2240, Lambda: 1.00, Time: 1114.53 seconds
+Test Loss: 0.1535, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [48/100], Loss: 0.0121, Accuracy: 0.9969, Images: 2240, Lambda: 1.00, Time: 1137.96 seconds
+Test Loss: 0.1533, Test Accuracy: 0.9446
+learing_rate =  1e-07
+Epoch [49/100], Loss: 0.0079, Accuracy: 0.9978, Images: 2240, Lambda: 1.00, Time: 1161.60 seconds
+Test Loss: 0.1925, Test Accuracy: 0.9429
+learing_rate =  1e-07
+Epoch [50/100], Loss: 0.0058, Accuracy: 0.9987, Images: 2240, Lambda: 1.00, Time: 1184.73 seconds
+Test Loss: 0.1493, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [51/100], Loss: 0.0032, Accuracy: 0.9996, Images: 2240, Lambda: 1.00, Time: 1208.25 seconds
+Test Loss: 0.1576, Test Accuracy: 0.9518
+learing_rate =  1e-07
+Epoch [52/100], Loss: 0.0015, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1231.49 seconds
+Test Loss: 0.1468, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [53/100], Loss: 0.0040, Accuracy: 0.9991, Images: 2240, Lambda: 1.00, Time: 1254.60 seconds
+Test Loss: 0.2876, Test Accuracy: 0.9232
+learing_rate =  1e-07
+Epoch [54/100], Loss: 0.0214, Accuracy: 0.9920, Images: 2240, Lambda: 1.00, Time: 1278.11 seconds
+Test Loss: 0.3487, Test Accuracy: 0.9232
+learing_rate =  1e-07
+Epoch [55/100], Loss: 0.0269, Accuracy: 0.9924, Images: 2240, Lambda: 1.00, Time: 1301.17 seconds
+Test Loss: 0.2314, Test Accuracy: 0.9375
+learing_rate =  1e-07
+Epoch [56/100], Loss: 0.0213, Accuracy: 0.9933, Images: 2240, Lambda: 1.00, Time: 1324.24 seconds
+Test Loss: 0.2804, Test Accuracy: 0.9196
+learing_rate =  1e-07
+Epoch [57/100], Loss: 0.0287, Accuracy: 0.9897, Images: 2240, Lambda: 1.00, Time: 1347.74 seconds
+Test Loss: 0.2864, Test Accuracy: 0.9196
+learing_rate =  1e-07
+Epoch [58/100], Loss: 0.0390, Accuracy: 0.9866, Images: 2240, Lambda: 1.00, Time: 1370.77 seconds
+Test Loss: 0.2209, Test Accuracy: 0.9446
+learing_rate =  1e-07
+Epoch [59/100], Loss: 0.0232, Accuracy: 0.9929, Images: 2240, Lambda: 1.00, Time: 1394.52 seconds
+Test Loss: 0.1724, Test Accuracy: 0.9464
+learing_rate =  1e-07
+Epoch [60/100], Loss: 0.0050, Accuracy: 0.9987, Images: 2240, Lambda: 1.00, Time: 1417.48 seconds
+Test Loss: 0.1861, Test Accuracy: 0.9500
+learing_rate =  1e-07
+Epoch [61/100], Loss: 0.0024, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1440.65 seconds
+Test Loss: 0.1510, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [62/100], Loss: 0.0013, Accuracy: 0.9996, Images: 2240, Lambda: 1.00, Time: 1464.11 seconds
+Test Loss: 0.1439, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [63/100], Loss: 0.0012, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1487.34 seconds
+Test Loss: 0.1565, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [64/100], Loss: 0.0018, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1510.68 seconds
+Test Loss: 0.1509, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [65/100], Loss: 0.0007, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1534.08 seconds
+Test Loss: 0.1387, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [66/100], Loss: 0.0011, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1557.94 seconds
+Test Loss: 0.1418, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [67/100], Loss: 0.0033, Accuracy: 0.9987, Images: 2240, Lambda: 1.00, Time: 1581.27 seconds
+Test Loss: 0.1922, Test Accuracy: 0.9518
+learing_rate =  1e-07
+Epoch [68/100], Loss: 0.0103, Accuracy: 0.9969, Images: 2240, Lambda: 1.00, Time: 1604.29 seconds
+Test Loss: 0.2091, Test Accuracy: 0.9482
+learing_rate =  1e-07
+Epoch [69/100], Loss: 0.0052, Accuracy: 0.9982, Images: 2240, Lambda: 1.00, Time: 1627.92 seconds
+Test Loss: 0.1832, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [70/100], Loss: 0.0140, Accuracy: 0.9951, Images: 2240, Lambda: 1.00, Time: 1651.33 seconds
+Test Loss: 0.3392, Test Accuracy: 0.9304
+learing_rate =  1e-07
+Epoch [71/100], Loss: 0.0216, Accuracy: 0.9929, Images: 2240, Lambda: 1.00, Time: 1674.61 seconds
+Test Loss: 0.3128, Test Accuracy: 0.9196
+learing_rate =  1e-07
+Epoch [72/100], Loss: 0.0176, Accuracy: 0.9942, Images: 2240, Lambda: 1.00, Time: 1697.86 seconds
+Test Loss: 0.1938, Test Accuracy: 0.9482
+learing_rate =  1e-07
+Epoch [73/100], Loss: 0.0166, Accuracy: 0.9955, Images: 2240, Lambda: 1.00, Time: 1721.05 seconds
+Test Loss: 0.1677, Test Accuracy: 0.9500
+learing_rate =  1e-07
+Epoch [74/100], Loss: 0.0074, Accuracy: 0.9973, Images: 2240, Lambda: 1.00, Time: 1744.33 seconds
+Test Loss: 0.0997, Test Accuracy: 0.9661
+learing_rate =  1e-07
+Epoch [75/100], Loss: 0.0036, Accuracy: 0.9987, Images: 2240, Lambda: 1.00, Time: 1767.73 seconds
+Test Loss: 0.1251, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [76/100], Loss: 0.0084, Accuracy: 0.9969, Images: 2240, Lambda: 1.00, Time: 1790.80 seconds
+Test Loss: 0.1555, Test Accuracy: 0.9518
+learing_rate =  1e-07
+Epoch [77/100], Loss: 0.0242, Accuracy: 0.9915, Images: 2240, Lambda: 1.00, Time: 1814.11 seconds
+Test Loss: 0.1872, Test Accuracy: 0.9429
+learing_rate =  1e-07
+Epoch [78/100], Loss: 0.0091, Accuracy: 0.9991, Images: 2240, Lambda: 1.00, Time: 1837.40 seconds
+Test Loss: 0.1540, Test Accuracy: 0.9429
+learing_rate =  1e-07
+Epoch [79/100], Loss: 0.0080, Accuracy: 0.9982, Images: 2240, Lambda: 1.00, Time: 1860.81 seconds
+Test Loss: 0.1530, Test Accuracy: 0.9536
+learing_rate =  1e-07
+Epoch [80/100], Loss: 0.0021, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1883.90 seconds
+Test Loss: 0.1226, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [81/100], Loss: 0.0015, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1907.28 seconds
+Test Loss: 0.1317, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [82/100], Loss: 0.0004, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1930.59 seconds
+Test Loss: 0.1229, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [83/100], Loss: 0.0008, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1953.68 seconds
+Test Loss: 0.1139, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [84/100], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 1977.04 seconds
+Test Loss: 0.1094, Test Accuracy: 0.9571
+learing_rate =  1e-07
+Epoch [85/100], Loss: 0.0006, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2000.55 seconds
+Test Loss: 0.1059, Test Accuracy: 0.9554
+learing_rate =  1e-07
+Epoch [86/100], Loss: 0.0004, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2023.62 seconds
+Test Loss: 0.1098, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [87/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2047.15 seconds
+Test Loss: 0.1078, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [88/100], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2070.62 seconds
+Test Loss: 0.1085, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [89/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2093.89 seconds
+Test Loss: 0.1046, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [90/100], Loss: 0.0005, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2117.69 seconds
+Test Loss: 0.1043, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [91/100], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2140.88 seconds
+Test Loss: 0.1193, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [92/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2164.67 seconds
+Test Loss: 0.1138, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [93/100], Loss: 0.0008, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2187.85 seconds
+Test Loss: 0.1136, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [94/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2210.90 seconds
+Test Loss: 0.1146, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [95/100], Loss: 0.0004, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2234.32 seconds
+Test Loss: 0.1094, Test Accuracy: 0.9607
+learing_rate =  1e-07
+Epoch [96/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2257.44 seconds
+Test Loss: 0.1021, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [97/100], Loss: 0.0002, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2280.64 seconds
+Test Loss: 0.1063, Test Accuracy: 0.9625
+learing_rate =  1e-07
+Epoch [98/100], Loss: 0.0003, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2304.03 seconds
+Test Loss: 0.1059, Test Accuracy: 0.9589
+learing_rate =  1e-07
+Epoch [99/100], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2326.98 seconds
+Test Loss: 0.1095, Test Accuracy: 0.9643
+learing_rate =  1e-07
+Epoch [100/100], Loss: 0.0001, Accuracy: 1.0000, Images: 2240, Lambda: 1.00, Time: 2350.80 seconds
+Test Loss: 0.1046, Test Accuracy: 0.9661
 Finished Training Successfully
+Accuracy train:
+[0.5223214285714286, 0.7857142857142857, 0.9151785714285714, 0.909375, 0.9375, 0.9485294117647058, 0.9538690476190477, 0.9674479166666666, 0.9745370370370371, 0.967741935483871, 0.9742647058823529, 0.9786184210526315, 0.96875, 0.9888392857142857, 0.9965277777777778, 0.9951388888888889, 0.9955357142857143, 0.9942602040816326, 0.9963942307692307, 0.9951923076923077, 0.9949776785714286, 0.9977678571428571, 0.9941737288135594, 0.993114406779661, 0.9975198412698413, 0.9995039682539683, 0.9957386363636364, 0.9995265151515151, 0.9973214285714286, 0.9848214285714286, 0.99375, 0.9910714285714286, 0.9883928571428572, 0.9861607142857143, 0.9919642857142857, 0.9977678571428571, 0.9995535714285714, 0.9973214285714286, 0.9982142857142857, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9986607142857142, 1.0, 0.9991071428571429, 0.996875, 0.9977678571428571, 0.9986607142857142, 0.9995535714285714, 1.0, 0.9991071428571429, 0.9919642857142857, 0.9924107142857143, 0.9933035714285714, 0.9897321428571428, 0.9866071428571429, 0.9928571428571429, 0.9986607142857142, 1.0, 0.9995535714285714, 1.0, 1.0, 1.0, 1.0, 0.9986607142857142, 0.996875, 0.9982142857142857, 0.9950892857142857, 0.9928571428571429, 0.9941964285714285, 0.9955357142857143, 0.9973214285714286, 0.9986607142857142, 0.996875, 0.9915178571428571, 0.9991071428571429, 0.9982142857142857, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+Accuracy test:
+[0.5571428571428572, 0.7607142857142857, 0.8214285714285714, 0.8910714285714286, 0.9196428571428571, 0.9285714285714286, 0.9285714285714286, 0.9267857142857143, 0.9446428571428571, 0.9339285714285714, 0.9535714285714286, 0.9482142857142857, 0.9392857142857143, 0.9517857142857142, 0.9625, 0.9553571428571429, 0.9428571428571428, 0.9571428571428572, 0.9482142857142857, 0.95, 0.9410714285714286, 0.9535714285714286, 0.9232142857142858, 0.9392857142857143, 0.9428571428571428, 0.9535714285714286, 0.9571428571428572, 0.9571428571428572, 0.9571428571428572, 0.9303571428571429, 0.9410714285714286, 0.9517857142857142, 0.9357142857142857, 0.9142857142857143, 0.9464285714285714, 0.9535714285714286, 0.9642857142857143, 0.9571428571428572, 0.9535714285714286, 0.9607142857142857, 0.9553571428571429, 0.9589285714285715, 0.9678571428571429, 0.9607142857142857, 0.9553571428571429, 0.9589285714285715, 0.9535714285714286, 0.9446428571428571, 0.9428571428571428, 0.9535714285714286, 0.9517857142857142, 0.9535714285714286, 0.9232142857142858, 0.9232142857142858, 0.9375, 0.9196428571428571, 0.9196428571428571, 0.9446428571428571, 0.9464285714285714, 0.95, 0.9571428571428572, 0.9535714285714286, 0.9571428571428572, 0.9589285714285715, 0.9589285714285715, 0.9625, 0.9517857142857142, 0.9482142857142857, 0.9553571428571429, 0.9303571428571429, 0.9196428571428571, 0.9482142857142857, 0.95, 0.9660714285714286, 0.9571428571428572, 0.9517857142857142, 0.9428571428571428, 0.9428571428571428, 0.9535714285714286, 0.9553571428571429, 0.9589285714285715, 0.9553571428571429, 0.9607142857142857, 0.9571428571428572, 0.9553571428571429, 0.9589285714285715, 0.9607142857142857, 0.9607142857142857, 0.9625, 0.9625, 0.9589285714285715, 0.9589285714285715, 0.9625, 0.9589285714285715, 0.9607142857142857, 0.9589285714285715, 0.9625, 0.9589285714285715, 0.9642857142857143, 0.9660714285714286]
+Loss train:
+[1.3892102922712053, 0.6462090185710362, 0.36381528207233976, 0.30002729445695875, 0.2142133265733719, 0.16550279036164284, 0.1742092019745282, 0.10599540399077038, 0.0892216779153656, 0.10140569568161041, 0.09154874908135217, 0.07676830797113086, 0.08588518817642969, 0.04216166488116696, 0.019527197463644876, 0.02339662354853418, 0.022151064286863774, 0.02737971715039897, 0.016857481313099224, 0.01930086347811784, 0.01982211296438306, 0.01365652668131848, 0.01749607806796429, 0.025641064877795466, 0.014801533296815165, 0.006875711419279613, 0.02105575502641979, 0.005421239490246851, 0.02106521713514147, 0.05151334621145257, 0.024669071967114826, 0.02480868839899943, 0.03406354695990948, 0.03288981307663822, 0.026072975719996196, 0.013837456151044794, 0.00424228141491767, 0.009610163206941382, 0.007475655647327325, 0.0016223100587792162, 0.0016691626201333876, 0.0007371305484931717, 0.0008500558100682351, 0.0009172741814316915, 0.003407963734623211, 0.0023445868014407875, 0.0037093619434537166, 0.012102465990132519, 0.007949563117290382, 0.005797272383850733, 0.003224717557688044, 0.001506527093754682, 0.003966634405307039, 0.021419366704295888, 0.026917419246664003, 0.02134431581611612, 0.02867660978808999, 0.03897207081650517, 0.023245372278116908, 0.005019212442649795, 0.0023947653657939686, 0.0013210627943668182, 0.0012035949682675502, 0.001848950439307373, 0.0006747767919607992, 0.0011096964249840571, 0.0033384887137799524, 0.010294347285162075, 0.005213291137728707, 0.014034156454207343, 0.021574239117450947, 0.0176264064292939, 0.016588928722194397, 0.007357541243774384, 0.0035925854983880918, 0.008430950271368991, 0.024222147564432816, 0.009095344596633886, 0.008014671564420235, 0.0021472192900546362, 0.001504638510622109, 0.0004286275669333658, 0.0007806504880136344, 0.00030635308480019116, 0.0005833933581275882, 0.00036881686254283913, 0.00022799606826343473, 0.0002582062394399795, 0.0002442759978293907, 0.00048255666505221076, 0.00033381514318274897, 0.00024306433386820053, 0.0008254469380257692, 0.0002178125606535884, 0.00039800226255205676, 0.00015133548961655054, 0.00016496562241497616, 0.00025259612749713205, 0.00011336176131797921, 0.00014863406938405075]
+Loss test:
+[1.1493770088468278, 0.6834325637136187, 0.48621132373809817, 0.31849579172474995, 0.2382577657699585, 0.19136274456977845, 0.20149896017142704, 0.19694061172860008, 0.15221131167241506, 0.18903687936919075, 0.14947612924235207, 0.1571255071886948, 0.18078547247818538, 0.1551939274583544, 0.12128730043768883, 0.13369621166161128, 0.2019699724657195, 0.15347664462668556, 0.15128367064254625, 0.14630785698869397, 0.18485283404588698, 0.16752005549413818, 0.22818949690886906, 0.1879859162228448, 0.19344733003526926, 0.15331853750560964, 0.13336199966392348, 0.12629231988851514, 0.12260354869067669, 0.2252114459872246, 0.19787207756723676, 0.17398835846355984, 0.19190054964274167, 0.30813284324748175, 0.17851010438586984, 0.13003787366407257, 0.11566017993858882, 0.1382146774658135, 0.12310052407639367, 0.13343531191349028, 0.1351906750883375, 0.12599767478449003, 0.13464919089206628, 0.12033187731036118, 0.13259099242942674, 0.13133785990732058, 0.15350746501769338, 0.15333615413733892, 0.1924527902688299, 0.14926791191101074, 0.15760940898741996, 0.14677356715713227, 0.2876373680574553, 0.34874214679002763, 0.23139039309961454, 0.28036045751401356, 0.2863684294479234, 0.22094390434878214, 0.17240887380072048, 0.18609413749405315, 0.15103125970012377, 0.1438608848622867, 0.15646167593076826, 0.1508515710809401, 0.13874335748010447, 0.14177395021542907, 0.19221715120864766, 0.20910028340294956, 0.1832298700564674, 0.33915323913097384, 0.3127599141427449, 0.19380994383245706, 0.1676687647455505, 0.09968658289206879, 0.12512346238696148, 0.15545382776430675, 0.18722580032689232, 0.1539614923298359, 0.1529966169169971, 0.12259294659431491, 0.13165315030408756, 0.1228556629137269, 0.11390007699706725, 0.10936177130788564, 0.10589576368885381, 0.10979664966996228, 0.10775675866752862, 0.10848238005169801, 0.10460415474538293, 0.10431888162025384, 0.11933355697297625, 0.11380138179021222, 0.11362248063087463, 0.11464915898229394, 0.10936831294425896, 0.10214545921023403, 0.10629126488763307, 0.10588288916540997, 0.10949783420988492, 0.10456319998151489]
+Time epoch:
+[29.14161992073059, 51.343236684799194, 71.56899857521057, 91.20915818214417, 111.75172162055969, 133.7437174320221, 155.0716516971588, 177.116934299469, 199.46121382713318, 221.85172414779663, 245.11028265953064, 268.7471480369568, 292.2088143825531, 316.0062744617462, 340.26769733428955, 364.47625756263733, 388.8634443283081, 413.0909481048584, 438.2377293109894, 463.14677357673645, 488.6177930831909, 513.6222138404846, 538.8714935779572, 564.8781659603119, 590.9900159835815, 617.2531945705414, 643.1724059581757, 669.6878020763397, 692.8624093532562, 716.0798790454865, 739.7475986480713, 762.8635733127594, 786.4691784381866, 810.0260229110718, 833.4274079799652, 857.0395150184631, 880.262538433075, 903.5968849658966, 926.9106171131134, 950.3050518035889, 973.7695441246033, 997.3084523677826, 1020.6925764083862, 1044.5770213603973, 1067.8473868370056, 1091.334888935089, 1114.534492969513, 1137.9558837413788, 1161.6044330596924, 1184.7320866584778, 1208.2547888755798, 1231.4890022277832, 1254.6033356189728, 1278.1147303581238, 1301.171588897705, 1324.2375938892365, 1347.7374002933502, 1370.768256187439, 1394.519568681717, 1417.4789304733276, 1440.6498000621796, 1464.1083748340607, 1487.3412516117096, 1510.6809484958649, 1534.0798225402832, 1557.9435572624207, 1581.2733509540558, 1604.289016008377, 1627.924393415451, 1651.326877117157, 1674.6061372756958, 1697.8570997714996, 1721.045037984848, 1744.334604024887, 1767.729784488678, 1790.7971303462982, 1814.1073331832886, 1837.4033498764038, 1860.8129534721375, 1883.8987839221954, 1907.2815823554993, 1930.589571237564, 1953.6836020946503, 1977.0412547588348, 2000.5530083179474, 2023.6245052814484, 2047.1507251262665, 2070.6167833805084, 2093.885445833206, 2117.688535451889, 2140.8804700374603, 2164.6677935123444, 2187.853620290756, 2210.9031839370728, 2234.3213889598846, 2257.4369733333588, 2280.638865709305, 2304.0329201221466, 2326.984890937805, 2350.8041021823883]
+Learning rate:
+[0.0001, 0.0001, 1e-05, 1e-05, 1e-06, 1e-06, 1e-06, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07, 1e-07]
+Lambdas:
+[0.1, 0.1, 0.15000000000000002, 0.2, 0.25, 0.3, 0.35, 0.39999999999999997, 0.44999999999999996, 0.49999999999999994, 0.5499999999999999, 0.6, 0.6, 0.65, 0.65, 0.7000000000000001, 0.7000000000000001, 0.7500000000000001, 0.7500000000000001, 0.8000000000000002, 0.8000000000000002, 0.8500000000000002, 0.8500000000000002, 0.9000000000000002, 0.9000000000000002, 0.9500000000000003, 0.9500000000000003, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
