@@ -99,7 +99,7 @@ def train_model(model, criterion, optimizer, train_loader, test_loader, num_epoc
             total_samples += labels.size(0)
 
         epoch_loss = running_loss / total_samples
-        epoch_accuracy = correct_predictions / total_samples * 100
+        epoch_accuracy = correct_predictions / total_samples
 
         if epoch_accuracy >= 85:
             learning_rate = 0.0001
@@ -113,20 +113,20 @@ def train_model(model, criterion, optimizer, train_loader, test_loader, num_epoc
         time_cur = time.time() - time0
         print("learing_rate = ", learning_rate)
 
-        print(f'Training - Epoch {epoch + 1}/{num_epochs}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.4f}%')
+        print(f'Training - Epoch {epoch + 1}/{num_epochs}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_accuracy:.4f}')
 
         test_loss, test_accuracy = evaluate_model(model, criterion, test_loader)
-        print(f'Testing - Epoch {epoch + 1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}%')
+        print(f'Testing - Epoch {epoch + 1}/{num_epochs}, Loss: {test_loss:.4f}, Accuracy: {test_accuracy:.4f}')
         print(f'Time: {time_cur:.2f} seconds')
 
         train_acc.append(epoch_accuracy)
         test_acc.append(test_accuracy)
+        loss_train.append(epoch_loss)
+        loss_test.append(test_loss)
         learning_rates.append(learning_rate)
         epoch_time.append(time_cur)
 
     print('Training complete.')
-    print('Train:', train_acc)
-    print('Test:', test_acc)
 
 
 def evaluate_model(model, criterion, test_loader):
@@ -148,11 +148,7 @@ def evaluate_model(model, criterion, test_loader):
             total_samples += labels.size(0)
 
     test_loss = running_loss / total_samples
-    test_accuracy = correct_predictions / total_samples * 100
-
-    test_acc.append(test_accuracy)
-    loss_test.append(test_loss)
-
+    test_accuracy = correct_predictions / total_samples
     return test_loss, test_accuracy
 
 
