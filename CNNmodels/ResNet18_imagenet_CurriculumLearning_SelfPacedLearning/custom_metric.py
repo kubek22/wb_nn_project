@@ -5,10 +5,7 @@ from torch import nn
 
 #%%
 
-def get_labels(data_loader):
-    return np.array([sample[1] for sample in data_loader.dataset]) 
-
-def k_nearest_metric(k, model, data_loader, device, labels=None):
+def k_nearest_metric(k, model, data_loader, device):
     components = list(model.children())
     truncated_model = nn.Sequential(*components[:-1])
     
@@ -27,14 +24,13 @@ def k_nearest_metric(k, model, data_loader, device, labels=None):
         tensor = truncated_model(x)
         shape = tensor.shape
         
+        labels = np.array([], dtype='int64')
         for x, y in data_loader:
+            labels = np.append(labels, y.cpu().numpy()) 
             x, y = x.to(device), y.to(device)
     
             tensor = truncated_model(x)
             tensors.append(tensor)
-    
-    if labels is None:
-        labels = get_labels(data_loader)
 
     if len(tensors) > 1 and tensors[-1].shape != tensors[0].shape:
         last_tensor = tensors[-1]
@@ -81,5 +77,4 @@ model.fc = nn.Linear(model.fc.in_features, 7)
 
 train_data_loader = data_loader.get_train_dataloader()
 
-labels = get_labels(train_data_loader)
-res = k_nearest_metric(5, model, train_data_loader, 'cuda', labels)
+res = k_nearest_metric(5, model, train_data_loader, 'cuda')

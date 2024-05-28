@@ -6,7 +6,7 @@ import torch.optim as optim
 import time
 import random
 import os
-from custom_metric import k_nearest_metric, get_labels
+from custom_metric import k_nearest_metric
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -90,8 +90,6 @@ def evaluate_model(model, test_data_loader, criterion):
 def train_model(epochs, model, train_data_loader, test_data_loader, device, optimizer, criterion, k):
     time0 = time.time()
     model.to(device)
-    train_labels = get_labels(train_data_loader)
-    test_labels = get_labels(test_data_loader)
     
     total_results = {
         'train_loss': [],
@@ -104,7 +102,7 @@ def train_model(epochs, model, train_data_loader, test_data_loader, device, opti
     
     for e in range(epochs):
         train_results = epoch(model, train_data_loader, device, optimizer, criterion)
-        train_results['k_nearest_metric'] =  np.mean(k_nearest_metric(k, model, train_data_loader, device, train_labels))
+        train_results['k_nearest_metric'] =  np.mean(k_nearest_metric(k, model, train_data_loader, device))
         print(f'Epoch [{e + 1}/{epochs}], Loss: {train_results["train_loss"]:.4f}, Accuracy: {train_results["train_accuracy"]:.4f}, k nearest metric: {train_results["k_nearest_metric"]:.4f}, Time: {time.time() - time0:.2f} seconds')
         
         total_results['train_loss'].append(train_results["train_loss"])
@@ -112,7 +110,7 @@ def train_model(epochs, model, train_data_loader, test_data_loader, device, opti
         total_results['train_k_nearest_metric'].append(train_results["k_nearest_metric"])
         
         test_results = evaluate_model(model, test_data_loader, criterion)
-        test_results['k_nearest_metric'] =  np.mean(k_nearest_metric(k, model, test_data_loader, device, test_labels))
+        test_results['k_nearest_metric'] =  np.mean(k_nearest_metric(k, model, test_data_loader, device))
         print(f'Test Loss: {test_results["test_loss"]:.4f}, Test Accuracy: {test_results["test_accuracy"]:.4f}, Test k nearest metric: {test_results["k_nearest_metric"]:.4f}')
         
         total_results['test_loss'].append(test_results["test_loss"])
@@ -148,12 +146,12 @@ def plot_results(output_dir, results, name_suffix=''):
 #%%    
 
 batch_size = 32
-epochs = 2
+epochs = 5
 
 # path=os.path.join(ROOT, DATA_EASY)
 path=os.path.join(ROOT, 'RSSCN7')
 
-rsscn7_easy_data_loader = RSSCN7_DataLoader(path, batch_size=batch_size)
+rsscn7_easy_data_loader = RSSCN7_DataLoader(path, batch_size=batch_size, shuffle=True)
 train_easy_data_loader = rsscn7_easy_data_loader.get_train_dataloader()
 test_easy_data_loader = rsscn7_easy_data_loader.get_test_dataloader()
 

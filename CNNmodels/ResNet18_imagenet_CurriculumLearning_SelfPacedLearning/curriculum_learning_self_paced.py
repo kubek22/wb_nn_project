@@ -9,6 +9,9 @@ import torch.nn as nn
 import torch.optim as optim
 import time
 import random
+from custom_metric import k_nearest_metric
+import numpy as np
+import os
 
 acc_train = []
 acc_test = []
@@ -22,7 +25,7 @@ random.seed(42)
 
 time0 = time.time()
 
-data_dir = '/Users/katebokhan/Desktop/wb_nn_project/data/RSSCN7'
+data_dir = os.path.join('./../../data', 'RSSCN7')
 batch_size = 32
 learning_rate = 0.0001
 num_epochs = 100
@@ -106,6 +109,9 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         train_loss = total_loss / len(easy_enough_loader.dataset)
         train_accuracy = correct / total
         num_images = len(easy_enough_loader.dataset)
+        
+        # counting metric result
+        print(np.mean(k_nearest_metric(5, model, easy_enough_loader, device)))
 
         if train_accuracy >= 0.88:
             learning_rate = 0.00001
@@ -143,6 +149,7 @@ def train_model_self_paced(model, train_loader, test_loader, criterion, optimize
         cur_learning_rate.append(learning_rate)
 
         evaluate_model(model, test_loader, criterion)
+        
 
     print('Finished Training Successfully')
 
