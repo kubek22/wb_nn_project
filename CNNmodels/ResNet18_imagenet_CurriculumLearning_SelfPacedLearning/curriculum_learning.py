@@ -9,6 +9,7 @@ import os
 from custom_metric import k_nearest_metric
 import numpy as np
 import matplotlib.pyplot as plt
+from torch.utils.data import ConcatDataset, DataLoader
 
 #%%
 
@@ -20,9 +21,9 @@ K = 5
 ROOT = './../../data'
 OUTPUT = 'plots'
 
-DATA_EASY = 'RSSCN7_easy'
-# DATA_MEDIUM = 'RSSCN7_medium'
-# DATA_HARD = 'RSSCN7_hard'
+DATA_EASY = 'RSS_e'
+DATA_MEDIUM = 'RSS_m'
+DATA_HARD = 'RSS_h'
 
 #%%
 
@@ -142,18 +143,45 @@ def plot_results(output_dir, results, name_suffix=''):
     plot(output_dir, results, 'accuracy', name_suffix, epochs)
     plot(output_dir, results, 'k_nearest_metric', name_suffix, epochs)
 
+def merge_dataloaders(dataloader1, dataloader2, batch_size=32, shuffle=False):
+    combined_dataset = ConcatDataset([dataloader1.dataset, dataloader2.dataset])
+    combined_dataloader = DataLoader(combined_dataset, batch_size=batch_size, shuffle=shuffle)
+    return combined_dataloader
 
 #%%    
 
 batch_size = 32
 epochs = 5
 
+# code below can be probably deleted
 # path=os.path.join(ROOT, DATA_EASY)
-path=os.path.join(ROOT, 'RSSCN7')
+# path=os.path.join(ROOT, 'RSSCN7')
 
-rsscn7_easy_data_loader = RSSCN7_DataLoader(path, batch_size=batch_size, shuffle=True)
+# rsscn7_easy_data_loader = RSSCN7_DataLoader(path, batch_size=batch_size, shuffle=True)
+# train_easy_data_loader = rsscn7_easy_data_loader.get_train_dataloader()
+# test_easy_data_loader = rsscn7_easy_data_loader.get_test_dataloader()
+
+#%%
+
+path_easy=os.path.join(ROOT, DATA_EASY)
+path_medium=os.path.join(ROOT, DATA_MEDIUM)
+
+rsscn7_easy_data_loader = RSSCN7_DataLoader(path_easy, batch_size=batch_size, shuffle=True)
 train_easy_data_loader = rsscn7_easy_data_loader.get_train_dataloader()
 test_easy_data_loader = rsscn7_easy_data_loader.get_test_dataloader()
+
+rsscn7_medium_data_loader = RSSCN7_DataLoader(path_medium, batch_size=batch_size, shuffle=True)
+train_medium_data_loader = rsscn7_medium_data_loader.get_train_dataloader()
+test_medium_data_loader = rsscn7_medium_data_loader.get_test_dataloader()
+
+
+
+train_e_m_data_loader = merge_dataloaders(train_easy_data_loader, train_medium_data_loader, 
+                                          batch_size=batch_size, shuffle=True)
+test_e_m_data_loader = merge_dataloaders(test_easy_data_loader, test_medium_data_loader, 
+                                          batch_size=batch_size, shuffle=True)
+
+#%%
 
 model = resnet18(weights='ResNet18_Weights.DEFAULT')
 num_filters = model.fc.in_features
@@ -162,6 +190,14 @@ model.fc = nn.Linear(num_filters, 7)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
-easy_training_results = train_model(epochs, model, test_easy_data_loader, test_easy_data_loader, device, optimizer, criterion, K)
+easy_training_results = train_model(epochs, model, train_e_m_data_loader, test_e_m_data_loader, device, optimizer, criterion, K)
 
-plot_results(OUTPUT, easy_training_results, name_suffix='_easy')
+
+#%% 
+#potentially dangerous fix to crashing matplotlib
+
+import os
+
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
+plot_results(OUTPUT, easy_training_results, name_suffix='_easy_medium')
