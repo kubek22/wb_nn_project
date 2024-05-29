@@ -11,7 +11,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from torch.utils.data import ConcatDataset, DataLoader
 
-#%%
+#%% parameters
+
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 random.seed(42)
 
@@ -19,11 +21,13 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 K = 5
 
 ROOT = './../../data'
-OUTPUT = 'plots'
+OUTPUT = 'output'
 
 DATA_EASY = 'RSS_e'
 DATA_MEDIUM = 'RSS_m'
 DATA_HARD = 'RSS_h'
+
+batch_size = 32
 
 #%%
 
@@ -148,23 +152,11 @@ def merge_dataloaders(dataloader1, dataloader2, batch_size=32, shuffle=False):
     combined_dataloader = DataLoader(combined_dataset, batch_size=batch_size, shuffle=shuffle)
     return combined_dataloader
 
-#%%    
+#%% data
 
-batch_size = 32
-epochs = 5
-
-# code below can be probably deleted
-# path=os.path.join(ROOT, DATA_EASY)
-# path=os.path.join(ROOT, 'RSSCN7')
-
-# rsscn7_easy_data_loader = RSSCN7_DataLoader(path, batch_size=batch_size, shuffle=True)
-# train_easy_data_loader = rsscn7_easy_data_loader.get_train_dataloader()
-# test_easy_data_loader = rsscn7_easy_data_loader.get_test_dataloader()
-
-#%%
-
-path_easy=os.path.join(ROOT, DATA_EASY)
-path_medium=os.path.join(ROOT, DATA_MEDIUM)
+path_easy = os.path.join(ROOT, DATA_EASY)
+path_medium = os.path.join(ROOT, DATA_MEDIUM)
+path_hard = os.path.join(ROOT, DATA_HARD)
 
 rsscn7_easy_data_loader = RSSCN7_DataLoader(path_easy, batch_size=batch_size, shuffle=True)
 train_easy_data_loader = rsscn7_easy_data_loader.get_train_dataloader()
@@ -174,30 +166,89 @@ rsscn7_medium_data_loader = RSSCN7_DataLoader(path_medium, batch_size=batch_size
 train_medium_data_loader = rsscn7_medium_data_loader.get_train_dataloader()
 test_medium_data_loader = rsscn7_medium_data_loader.get_test_dataloader()
 
-
-
 train_e_m_data_loader = merge_dataloaders(train_easy_data_loader, train_medium_data_loader, 
                                           batch_size=batch_size, shuffle=True)
 test_e_m_data_loader = merge_dataloaders(test_easy_data_loader, test_medium_data_loader, 
                                           batch_size=batch_size, shuffle=True)
 
-#%%
+rsscn7_hard_data_loader = RSSCN7_DataLoader(path_hard, batch_size=batch_size, shuffle=True)
+train_hard_data_loader = rsscn7_hard_data_loader.get_train_dataloader()
+test_hard_data_loader = rsscn7_hard_data_loader.get_test_dataloader()
+
+train_e_m_h_data_loader = merge_dataloaders(train_e_m_data_loader, train_hard_data_loader, 
+                                          batch_size=batch_size, shuffle=True)
+test_e_m_h_data_loader = merge_dataloaders(test_e_m_data_loader, test_hard_data_loader, 
+                                          batch_size=batch_size, shuffle=True)
+
+#%% training on easy
 
 model = resnet18(weights='ResNet18_Weights.DEFAULT')
 num_filters = model.fc.in_features
 model.fc = nn.Linear(num_filters, 7)
 
+epochs = 100
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
-easy_training_results = train_model(epochs, model, train_e_m_data_loader, test_e_m_data_loader, device, optimizer, criterion, K)
+easy_training_results = train_model(epochs, model, train_easy_data_loader, test_easy_data_loader, device, optimizer, criterion, K)
 
+checkpoint = {
+    'model_state_dict': model.state_dict(),
+    'training_results': easy_training_results
+}
 
-#%% 
-#potentially dangerous fix to crashing matplotlib
+model_path = os.path.join(OUTPUT, 'model_easy.pth')
+torch.save(checkpoint, model_path)
 
-import os
+checkpoint = torch.load(model_path)
+easy_training_results = checkpoint['training_results']
+plot_results(OUTPUT, easy_training_results, name_suffix='_easy')
 
-os.environ['KMP_DUPLICATE_LIB_OK']='True'
+#%% adding medium
 
-plot_results(OUTPUT, easy_training_results, name_suffix='_easy_medium')
+model_path = os.path.join(OUTPUT, 'model_easy.pth')
+checkpoint = torch.load(model_path)
+model.load_state_dict(checkpoint['model_state_dict'])
+
+epochs = 100
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters())
+
+e_m_training_results = train_model(epochs, model, train_e_m_data_loader, test_e_m_data_loader, device, optimizer, criterion, K)
+
+checkpoint = {
+    'model_state_dict': model.state_dict(),
+    'training_results': e_m_training_results
+}
+
+model_path = os.path.join(OUTPUT, 'model_easy_medium.pth')
+torch.save(checkpoint, model_path)
+
+checkpoint = torch.load(model_path)
+e_m_training_results = checkpoint['training_results']
+plot_results(OUTPUT, e_m_training_results, name_suffix='_easy_medium')
+
+#%% adding hard
+
+model_path = os.path.join(OUTPUT, 'model_easy_medium.pth')
+checkpoint = torch.load(model_path)
+model.load_state_dict(checkpoint['model_state_dict'])
+
+epochs = 100
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters())
+
+e_m_h_training_results = train_model(epochs, model, train_e_m_h_data_loader, test_e_m_h_data_loader, device, optimizer, criterion, K)
+
+checkpoint = {
+    'model_state_dict': model.state_dict(),
+    'training_results': e_m_h_training_results
+}
+
+model_path = os.path.join(OUTPUT, 'model_easy_medium_hard.pth')
+torch.save(checkpoint, model_path)
+
+checkpoint = torch.load(model_path)
+e_m_h_training_results = checkpoint['training_results']
+plot_results(OUTPUT, e_m_h_training_results, name_suffix='_easy_medium_hard')
+
