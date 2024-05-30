@@ -186,7 +186,7 @@ model = resnet18(weights='ResNet18_Weights.DEFAULT')
 num_filters = model.fc.in_features
 model.fc = nn.Linear(num_filters, 7)
 
-epochs = 100
+epochs = 50
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
@@ -210,7 +210,7 @@ model_path = os.path.join(OUTPUT, 'model_easy.pth')
 checkpoint = torch.load(model_path)
 model.load_state_dict(checkpoint['model_state_dict'])
 
-epochs = 100
+epochs = 80
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
