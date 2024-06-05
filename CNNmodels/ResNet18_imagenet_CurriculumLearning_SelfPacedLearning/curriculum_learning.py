@@ -234,7 +234,7 @@ model_path = os.path.join(OUTPUT, 'model_easy_medium.pth')
 checkpoint = torch.load(model_path)
 model.load_state_dict(checkpoint['model_state_dict'])
 
-epochs = 100
+epochs = 20
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
